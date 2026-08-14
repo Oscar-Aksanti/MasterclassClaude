@@ -1,0 +1,301 @@
+date_vente,region,canal_vente,categorie_produit,produit,quantite,prix_unitaire_fcfa,montant_total_fcfa,commercial,delai_livraison_jours
+2026-02-01,Thiès,Grossiste,Céréales & Farines,Maïs concassé 1kg,499,457,228043,Aïssatou Ndiaye,2
+2026-02-02,Dakar,E-commerce,Épicerie salée,Huile végétale 5L,101,3722,375922,Cheikh Gueye,2
+2026-02-03,Casamance,Détail,Produits laitiers,Beurre 250g,246,1435,353010,Ibrahima Sarr,2
+2026-02-03,Dakar,E-commerce,Hygiène & Entretien,Lessive en poudre 1kg,104,788,81952,Khady Diop,4
+2026-02-03,Nord,Détail,Céréales & Farines,Couscous de mil 500g,361,697,251617,Aïssatou Ndiaye,9
+2026-02-04,Casamance,Grossiste,Céréales & Farines,Couscous de mil 500g,396,690,273240,Ibrahima Sarr,3
+2026-02-04,Sud,Détail,Produits laitiers,Beurre 250g,255,1457,371535,Ibrahima Sarr,3
+2026-02-05,Casamance,Détail,Boissons,Eau minérale 1.5L,246,356,87576,Mariama Ba,4
+2026-02-05,Casamance,Détail,Épicerie salée,Tomate concentrée 400g,249,444,110556,Aïssatou Ndiaye,4
+2026-02-05,Thiès,Grossiste,Céréales & Farines,Couscous de mil 500g,409,695,284255,Ibrahima Sarr,2
+2026-02-07,Sud,E-commerce,Produits laitiers,Lait en poudre 400g,61,1225,74725,Moussa Fall,3
+2026-02-07,Sud,Grossiste,Boissons,Eau minérale 1.5L,403,355,143065,Aïssatou Ndiaye,2
+2026-02-08,Dakar,Grossiste,Hygiène & Entretien,Savon de Marseille 400g,640,642,410880,Moussa Fall,3
+2026-02-08,Nord,Grossiste,Hygiène & Entretien,Eau de Javel 1L,565,497,280805,Khady Diop,11
+2026-02-09,Casamance,Grossiste,Hygiène & Entretien,Dentifrice 75ml,309,808,249672,Aïssatou Ndiaye,4
+2026-02-09,Dakar,Grossiste,Épicerie salée,Huile végétale 5L,588,6222,3658536,Aïssatou Ndiaye,3
+2026-02-09,Thiès,Grossiste,Épicerie salée,Huile végétale 5L,373,6113,2280149,Cheikh Gueye,4
+2026-02-10,Thiès,Détail,Épicerie salée,Tomate concentrée 400g,355,455,161525,Moussa Fall,4
+2026-02-11,Casamance,E-commerce,Céréales & Farines,Maïs concassé 1kg,52,272,14144,Ibrahima Sarr,2
+2026-02-12,Nord,E-commerce,Hygiène & Entretien,Dentifrice 75ml,78,496,38688,Moussa Fall,10
+2026-02-12,Thiès,Détail,Céréales & Farines,Mil décortiqué 1kg,303,489,148167,Cheikh Gueye,2
+2026-02-12,Thiès,E-commerce,Épicerie salée,Tomate concentrée 400g,85,268,22780,Ibrahima Sarr,4
+2026-02-13,Dakar,E-commerce,Céréales & Farines,Mil décortiqué 1kg,142,290,41180,Khady Diop,3
+2026-02-13,Nord,Détail,Boissons,Café soluble 100g,286,1812,518232,Khady Diop,12
+2026-02-14,Casamance,E-commerce,Hygiène & Entretien,Savon de Marseille 400g,64,383,24512,Khady Diop,4
+2026-02-14,Dakar,Grossiste,Produits laitiers,Fromage fondu 8 portions,573,1577,903621,Ibrahima Sarr,4
+2026-02-15,Nord,E-commerce,Produits laitiers,Fromage fondu 8 portions,85,985,83725,Cheikh Gueye,9
+2026-02-16,Casamance,E-commerce,Boissons,Café soluble 100g,74,1054,77996,Mariama Ba,2
+2026-02-16,Casamance,Grossiste,Céréales & Farines,Maïs concassé 1kg,366,461,168726,Aïssatou Ndiaye,3
+2026-02-16,Sud,E-commerce,Épicerie salée,Sucre en poudre 1kg,78,459,35802,Moussa Fall,4
+2026-02-17,Casamance,Grossiste,Produits laitiers,Yaourt nature 4x125g,353,1200,423600,Ibrahima Sarr,2
+2026-02-17,Nord,Grossiste,Épicerie salée,Huile végétale 5L,519,6132,3182508,Ibrahima Sarr,14
+2026-02-17,Sud,Détail,Produits laitiers,Fromage fondu 8 portions,269,1607,432283,Khady Diop,2
+2026-02-17,Sud,Grossiste,Hygiène & Entretien,Eau de Javel 1L,412,506,208472,Cheikh Gueye,3
+2026-02-19,Dakar,Détail,Céréales & Farines,Farine de blé 1kg,421,547,230287,Aïssatou Ndiaye,3
+2026-02-19,Sud,Grossiste,Produits laitiers,Fromage fondu 8 portions,450,1583,712350,Cheikh Gueye,3
+2026-02-20,Dakar,Détail,Boissons,Thé Touba 200g,510,1101,561510,Mariama Ba,3
+2026-02-20,Nord,Grossiste,Boissons,Thé Touba 200g,442,1087,480454,Ibrahima Sarr,14
+2026-02-21,Nord,Détail,Boissons,Eau minérale 1.5L,359,349,125291,Mariama Ba,11
+2026-02-21,Nord,E-commerce,Produits laitiers,Yaourt nature 4x125g,81,766,62046,Aïssatou Ndiaye,10
+2026-02-22,Dakar,Grossiste,Boissons,Jus de bissap 1L,751,918,689418,Aïssatou Ndiaye,4
+2026-02-23,Thiès,Détail,Boissons,Jus de bissap 1L,332,899,298468,Moussa Fall,2
+2026-02-24,Sud,Grossiste,Boissons,Jus de bissap 1L,322,887,285614,Khady Diop,3
+2026-02-25,Dakar,Détail,Épicerie salée,Huile végétale 5L,426,6299,2683374,Mariama Ba,4
+2026-02-25,Sud,Détail,Céréales & Farines,Couscous de mil 500g,297,703,208791,Aïssatou Ndiaye,4
+2026-02-25,Sud,E-commerce,Hygiène & Entretien,Eau de Javel 1L,77,307,23639,Moussa Fall,4
+2026-02-25,Thiès,E-commerce,Céréales & Farines,Maïs concassé 1kg,92,281,25852,Mariama Ba,3
+2026-02-25,Thiès,E-commerce,Boissons,Thé Touba 200g,69,692,47748,Aïssatou Ndiaye,4
+2026-02-27,Nord,Grossiste,Hygiène & Entretien,Lessive en poudre 1kg,434,1372,595448,Mariama Ba,12
+2026-02-28,Thiès,Grossiste,Hygiène & Entretien,Savon de Marseille 400g,501,640,320640,Khady Diop,3
+2026-03-01,Dakar,E-commerce,Hygiène & Entretien,Lessive en poudre 1kg,120,793,95160,Cheikh Gueye,3
+2026-03-01,Dakar,Grossiste,Produits laitiers,Fromage fondu 8 portions,566,1596,903336,Cheikh Gueye,3
+2026-03-01,Nord,E-commerce,Produits laitiers,Yaourt nature 4x125g,39,755,29445,Mariama Ba,11
+2026-03-01,Sud,Grossiste,Boissons,Eau minérale 1.5L,385,346,133210,Mariama Ba,2
+2026-03-01,Thiès,Grossiste,Céréales & Farines,Couscous de mil 500g,442,687,303654,Cheikh Gueye,3
+2026-03-03,Dakar,Détail,Boissons,Thé Touba 200g,489,1109,542301,Mariama Ba,3
+2026-03-03,Dakar,Grossiste,Boissons,Jus de bissap 1L,683,900,614700,Aïssatou Ndiaye,2
+2026-03-04,Casamance,Grossiste,Produits laitiers,Yaourt nature 4x125g,335,1223,409705,Mariama Ba,3
+2026-03-05,Dakar,Détail,Céréales & Farines,Farine de blé 1kg,438,545,238710,Cheikh Gueye,3
+2026-03-05,Nord,E-commerce,Produits laitiers,Fromage fondu 8 portions,38,987,37506,Cheikh Gueye,10
+2026-03-07,Nord,Grossiste,Hygiène & Entretien,Lessive en poudre 1kg,142,1350,191700,Moussa Fall,12
+2026-03-07,Thiès,Détail,Épicerie salée,Tomate concentrée 400g,371,447,165837,Ibrahima Sarr,4
+2026-03-08,Sud,Détail,Céréales & Farines,Couscous de mil 500g,302,710,214420,Aïssatou Ndiaye,3
+2026-03-08,Thiès,Détail,Boissons,Jus de bissap 1L,356,901,320756,Moussa Fall,4
+2026-03-09,Casamance,Détail,Produits laitiers,Beurre 250g,285,1447,412395,Aïssatou Ndiaye,3
+2026-03-09,Dakar,Détail,Épicerie salée,Huile végétale 5L,425,6298,2676650,Mariama Ba,4
+2026-03-09,Dakar,Grossiste,Hygiène & Entretien,Savon de Marseille 400g,689,640,440960,Aïssatou Ndiaye,3
+2026-03-09,Nord,Grossiste,Boissons,Thé Touba 200g,141,1098,154818,Ibrahima Sarr,12
+2026-03-09,Thiès,Grossiste,Céréales & Farines,Maïs concassé 1kg,570,469,267330,Aïssatou Ndiaye,2
+2026-03-09,Thiès,Grossiste,Hygiène & Entretien,Savon de Marseille 400g,507,654,331578,Moussa Fall,3
+2026-03-10,Casamance,Grossiste,Céréales & Farines,Maïs concassé 1kg,356,464,165184,Khady Diop,3
+2026-03-10,Nord,Grossiste,Épicerie salée,Huile végétale 5L,164,6201,1016964,Aïssatou Ndiaye,12
+2026-03-10,Nord,Grossiste,Hygiène & Entretien,Eau de Javel 1L,169,509,86021,Moussa Fall,10
+2026-03-10,Sud,E-commerce,Épicerie salée,Sucre en poudre 1kg,89,476,42364,Cheikh Gueye,4
+2026-03-11,Casamance,E-commerce,Céréales & Farines,Maïs concassé 1kg,63,276,17388,Ibrahima Sarr,2
+2026-03-13,Nord,Détail,Boissons,Café soluble 100g,100,1806,180600,Aïssatou Ndiaye,8
+2026-03-14,Dakar,Grossiste,Épicerie salée,Huile végétale 5L,537,6108,3279996,Mariama Ba,4
+2026-03-14,Thiès,E-commerce,Boissons,Thé Touba 200g,95,696,66120,Moussa Fall,2
+2026-03-15,Casamance,E-commerce,Hygiène & Entretien,Savon de Marseille 400g,70,396,27720,Mariama Ba,3
+2026-03-15,Casamance,Grossiste,Céréales & Farines,Couscous de mil 500g,389,686,266854,Cheikh Gueye,2
+2026-03-15,Sud,Détail,Produits laitiers,Beurre 250g,263,1459,383717,Khady Diop,3
+2026-03-16,Casamance,E-commerce,Boissons,Café soluble 100g,92,1069,98348,Aïssatou Ndiaye,3
+2026-03-17,Casamance,Détail,Épicerie salée,Tomate concentrée 400g,229,456,104424,Moussa Fall,3
+2026-03-17,Thiès,Grossiste,Épicerie salée,Huile végétale 5L,392,6232,2442944,Ibrahima Sarr,4
+2026-03-18,Casamance,Grossiste,Hygiène & Entretien,Dentifrice 75ml,303,816,247248,Moussa Fall,2
+2026-03-20,Dakar,E-commerce,Céréales & Farines,Mil décortiqué 1kg,155,286,44330,Moussa Fall,4
+2026-03-20,Dakar,E-commerce,Épicerie salée,Huile végétale 5L,129,3937,507873,Cheikh Gueye,2
+2026-03-20,Sud,E-commerce,Produits laitiers,Lait en poudre 400g,75,1243,93225,Ibrahima Sarr,2
+2026-03-20,Sud,E-commerce,Hygiène & Entretien,Eau de Javel 1L,99,311,30789,Moussa Fall,3
+2026-03-22,Sud,Grossiste,Boissons,Jus de bissap 1L,327,905,295935,Ibrahima Sarr,2
+2026-03-22,Thiès,Détail,Céréales & Farines,Mil décortiqué 1kg,303,483,146349,Khady Diop,3
+2026-03-24,Casamance,Détail,Boissons,Eau minérale 1.5L,220,344,75680,Ibrahima Sarr,3
+2026-03-24,Sud,Détail,Produits laitiers,Fromage fondu 8 portions,271,1602,434142,Ibrahima Sarr,3
+2026-03-24,Sud,Grossiste,Hygiène & Entretien,Eau de Javel 1L,363,506,183678,Cheikh Gueye,4
+2026-03-24,Thiès,E-commerce,Épicerie salée,Tomate concentrée 400g,102,285,29070,Khady Diop,3
+2026-03-25,Nord,Détail,Céréales & Farines,Couscous de mil 500g,133,703,93499,Aïssatou Ndiaye,12
+2026-03-26,Nord,E-commerce,Hygiène & Entretien,Dentifrice 75ml,32,499,15968,Cheikh Gueye,12
+2026-03-27,Sud,Grossiste,Produits laitiers,Fromage fondu 8 portions,447,1575,704025,Moussa Fall,3
+2026-03-27,Thiès,E-commerce,Céréales & Farines,Maïs concassé 1kg,123,294,36162,Moussa Fall,2
+2026-03-28,Nord,Détail,Boissons,Eau minérale 1.5L,109,356,38804,Mariama Ba,11
+2026-04-01,Nord,Détail,Boissons,Café soluble 100g,97,1820,176540,Moussa Fall,9
+2026-04-02,Casamance,E-commerce,Hygiène & Entretien,Savon de Marseille 400g,102,408,41616,Mariama Ba,3
+2026-04-02,Dakar,E-commerce,Céréales & Farines,Mil décortiqué 1kg,217,299,64883,Khady Diop,4
+2026-04-02,Sud,E-commerce,Produits laitiers,Lait en poudre 400g,87,1225,106575,Khady Diop,2
+2026-04-03,Casamance,Grossiste,Hygiène & Entretien,Dentifrice 75ml,285,808,230280,Ibrahima Sarr,3
+2026-04-03,Nord,Détail,Céréales & Farines,Couscous de mil 500g,129,689,88881,Aïssatou Ndiaye,11
+2026-04-03,Sud,Grossiste,Boissons,Eau minérale 1.5L,353,352,124256,Mariama Ba,3
+2026-04-04,Dakar,Grossiste,Produits laitiers,Fromage fondu 8 portions,563,1596,898548,Aïssatou Ndiaye,4
+2026-04-05,Dakar,E-commerce,Épicerie salée,Huile végétale 5L,157,3941,618737,Khady Diop,2
+2026-04-05,Nord,Détail,Boissons,Eau minérale 1.5L,118,347,40946,Khady Diop,10
+2026-04-07,Casamance,Détail,Boissons,Eau minérale 1.5L,219,353,77307,Khady Diop,3
+2026-04-07,Sud,E-commerce,Épicerie salée,Sucre en poudre 1kg,114,453,51642,Cheikh Gueye,2
+2026-04-07,Sud,Grossiste,Hygiène & Entretien,Eau de Javel 1L,384,500,192000,Aïssatou Ndiaye,3
+2026-04-08,Dakar,Détail,Céréales & Farines,Farine de blé 1kg,390,560,218400,Khady Diop,4
+2026-04-08,Sud,Détail,Produits laitiers,Fromage fondu 8 portions,264,1620,427680,Ibrahima Sarr,3
+2026-04-08,Thiès,Détail,Boissons,Jus de bissap 1L,310,902,279620,Ibrahima Sarr,2
+2026-04-09,Dakar,Grossiste,Épicerie salée,Huile végétale 5L,559,6288,3514992,Mariama Ba,2
+2026-04-09,Thiès,E-commerce,Épicerie salée,Tomate concentrée 400g,141,267,37647,Moussa Fall,3
+2026-04-10,Casamance,Détail,Produits laitiers,Beurre 250g,258,1466,378228,Khady Diop,4
+2026-04-10,Dakar,Grossiste,Boissons,Jus de bissap 1L,685,914,626090,Moussa Fall,3
+2026-04-11,Thiès,Grossiste,Céréales & Farines,Couscous de mil 500g,390,695,271050,Khady Diop,4
+2026-04-12,Casamance,E-commerce,Céréales & Farines,Maïs concassé 1kg,82,284,23288,Cheikh Gueye,3
+2026-04-12,Dakar,Détail,Boissons,Thé Touba 200g,469,1086,509334,Khady Diop,4
+2026-04-12,Thiès,Détail,Céréales & Farines,Mil décortiqué 1kg,315,482,151830,Cheikh Gueye,3
+2026-04-12,Thiès,E-commerce,Céréales & Farines,Maïs concassé 1kg,146,283,41318,Cheikh Gueye,2
+2026-04-13,Casamance,E-commerce,Boissons,Café soluble 100g,115,1106,127190,Moussa Fall,2
+2026-04-13,Sud,Grossiste,Boissons,Jus de bissap 1L,274,895,245230,Ibrahima Sarr,2
+2026-04-14,Nord,E-commerce,Produits laitiers,Yaourt nature 4x125g,51,698,35598,Moussa Fall,10
+2026-04-14,Nord,Grossiste,Épicerie salée,Huile végétale 5L,161,6236,1003996,Moussa Fall,15
+2026-04-16,Casamance,Détail,Épicerie salée,Tomate concentrée 400g,230,448,103040,Khady Diop,2
+2026-04-16,Sud,Grossiste,Produits laitiers,Fromage fondu 8 portions,423,1592,673416,Ibrahima Sarr,2
+2026-04-17,Casamance,Grossiste,Produits laitiers,Yaourt nature 4x125g,324,1185,383940,Moussa Fall,3
+2026-04-17,Thiès,Grossiste,Hygiène & Entretien,Savon de Marseille 400g,494,639,315666,Khady Diop,4
+2026-04-18,Casamance,Grossiste,Céréales & Farines,Couscous de mil 500g,356,711,253116,Aïssatou Ndiaye,4
+2026-04-19,Dakar,Grossiste,Hygiène & Entretien,Savon de Marseille 400g,607,663,402441,Khady Diop,2
+2026-04-20,Nord,E-commerce,Produits laitiers,Fromage fondu 8 portions,51,949,48399,Khady Diop,9
+2026-04-20,Sud,Détail,Céréales & Farines,Couscous de mil 500g,282,694,195708,Aïssatou Ndiaye,3
+2026-04-21,Dakar,Détail,Épicerie salée,Huile végétale 5L,460,6277,2887420,Cheikh Gueye,3
+2026-04-21,Dakar,E-commerce,Hygiène & Entretien,Lessive en poudre 1kg,161,844,135884,Khady Diop,4
+2026-04-21,Thiès,Grossiste,Céréales & Farines,Maïs concassé 1kg,487,464,225968,Mariama Ba,3
+2026-04-22,Nord,Grossiste,Hygiène & Entretien,Lessive en poudre 1kg,133,1358,180614,Khady Diop,13
+2026-04-22,Sud,Détail,Produits laitiers,Beurre 250g,274,1449,397026,Cheikh Gueye,2
+2026-04-22,Thiès,Grossiste,Épicerie salée,Huile végétale 5L,332,6196,2057072,Aïssatou Ndiaye,3
+2026-04-24,Sud,E-commerce,Hygiène & Entretien,Eau de Javel 1L,130,317,41210,Moussa Fall,2
+2026-04-25,Nord,Grossiste,Boissons,Thé Touba 200g,137,1097,150289,Moussa Fall,13
+2026-04-27,Casamance,Grossiste,Céréales & Farines,Maïs concassé 1kg,343,464,159152,Ibrahima Sarr,3
+2026-04-27,Nord,E-commerce,Hygiène & Entretien,Dentifrice 75ml,40,479,19160,Aïssatou Ndiaye,11
+2026-04-27,Nord,Grossiste,Hygiène & Entretien,Eau de Javel 1L,161,509,81949,Moussa Fall,12
+2026-04-28,Thiès,Détail,Épicerie salée,Tomate concentrée 400g,311,441,137151,Khady Diop,3
+2026-04-28,Thiès,E-commerce,Boissons,Thé Touba 200g,118,690,81420,Ibrahima Sarr,2
+2026-05-01,Dakar,Détail,Céréales & Farines,Farine de blé 1kg,369,550,202950,Mariama Ba,4
+2026-05-02,Sud,Grossiste,Hygiène & Entretien,Eau de Javel 1L,344,507,174408,Khady Diop,4
+2026-05-02,Thiès,E-commerce,Céréales & Farines,Maïs concassé 1kg,186,292,54312,Aïssatou Ndiaye,4
+2026-05-03,Casamance,E-commerce,Boissons,Café soluble 100g,142,1122,159324,Cheikh Gueye,2
+2026-05-04,Thiès,E-commerce,Épicerie salée,Tomate concentrée 400g,168,288,48384,Aïssatou Ndiaye,2
+2026-05-04,Thiès,Grossiste,Hygiène & Entretien,Savon de Marseille 400g,485,654,317190,Ibrahima Sarr,4
+2026-05-05,Casamance,Détail,Épicerie salée,Tomate concentrée 400g,238,442,105196,Mariama Ba,2
+2026-05-05,Dakar,Détail,Boissons,Thé Touba 200g,440,1108,487520,Ibrahima Sarr,3
+2026-05-06,Casamance,Grossiste,Hygiène & Entretien,Dentifrice 75ml,270,800,216000,Cheikh Gueye,2
+2026-05-06,Dakar,E-commerce,Céréales & Farines,Mil décortiqué 1kg,267,290,77430,Moussa Fall,2
+2026-05-06,Nord,E-commerce,Hygiène & Entretien,Dentifrice 75ml,47,464,21808,Khady Diop,11
+2026-05-06,Sud,Détail,Céréales & Farines,Couscous de mil 500g,267,709,189303,Aïssatou Ndiaye,3
+2026-05-07,Nord,Grossiste,Boissons,Thé Touba 200g,138,1105,152490,Ibrahima Sarr,10
+2026-05-07,Nord,Grossiste,Hygiène & Entretien,Eau de Javel 1L,150,505,75750,Ibrahima Sarr,14
+2026-05-07,Nord,Grossiste,Hygiène & Entretien,Lessive en poudre 1kg,124,1340,166160,Khady Diop,11
+2026-05-07,Sud,Détail,Produits laitiers,Beurre 250g,254,1457,370078,Aïssatou Ndiaye,4
+2026-05-08,Casamance,Grossiste,Céréales & Farines,Maïs concassé 1kg,348,456,158688,Mariama Ba,3
+2026-05-08,Thiès,Détail,Boissons,Jus de bissap 1L,284,891,253044,Ibrahima Sarr,2
+2026-05-08,Thiès,Détail,Épicerie salée,Tomate concentrée 400g,336,450,151200,Moussa Fall,3
+2026-05-09,Dakar,E-commerce,Épicerie salée,Huile végétale 5L,222,3963,879786,Aïssatou Ndiaye,3
+2026-05-09,Dakar,Grossiste,Produits laitiers,Fromage fondu 8 portions,544,1612,876928,Mariama Ba,3
+2026-05-09,Dakar,Grossiste,Épicerie salée,Huile végétale 5L,557,6172,3437804,Khady Diop,4
+2026-05-09,Nord,Grossiste,Épicerie salée,Huile végétale 5L,162,6187,1002294,Mariama Ba,12
+2026-05-11,Thiès,Détail,Céréales & Farines,Mil décortiqué 1kg,316,482,152312,Ibrahima Sarr,2
+2026-05-12,Nord,E-commerce,Produits laitiers,Fromage fondu 8 portions,66,1024,67584,Khady Diop,10
+2026-05-12,Sud,Grossiste,Produits laitiers,Fromage fondu 8 portions,427,1579,674233,Cheikh Gueye,3
+2026-05-12,Thiès,Grossiste,Céréales & Farines,Couscous de mil 500g,356,702,249912,Ibrahima Sarr,3
+2026-05-13,Casamance,Détail,Produits laitiers,Beurre 250g,267,1447,386349,Aïssatou Ndiaye,2
+2026-05-13,Sud,Grossiste,Boissons,Jus de bissap 1L,274,884,242216,Aïssatou Ndiaye,3
+2026-05-14,Nord,Détail,Boissons,Eau minérale 1.5L,102,353,36006,Khady Diop,12
+2026-05-15,Casamance,Grossiste,Céréales & Farines,Couscous de mil 500g,373,699,260727,Khady Diop,4
+2026-05-15,Thiès,Grossiste,Céréales & Farines,Maïs concassé 1kg,478,464,221792,Aïssatou Ndiaye,2
+2026-05-16,Dakar,Grossiste,Hygiène & Entretien,Savon de Marseille 400g,552,643,354936,Khady Diop,3
+2026-05-17,Sud,E-commerce,Épicerie salée,Sucre en poudre 1kg,150,437,65550,Ibrahima Sarr,2
+2026-05-18,Casamance,Grossiste,Produits laitiers,Yaourt nature 4x125g,300,1205,361500,Ibrahima Sarr,4
+2026-05-18,Dakar,E-commerce,Hygiène & Entretien,Lessive en poudre 1kg,205,822,168510,Khady Diop,3
+2026-05-18,Nord,Détail,Boissons,Café soluble 100g,92,1792,164864,Mariama Ba,9
+2026-05-19,Nord,Détail,Céréales & Farines,Couscous de mil 500g,126,695,87570,Moussa Fall,10
+2026-05-19,Sud,Grossiste,Boissons,Eau minérale 1.5L,353,349,123197,Ibrahima Sarr,3
+2026-05-21,Dakar,Grossiste,Boissons,Jus de bissap 1L,666,915,609390,Moussa Fall,4
+2026-05-21,Sud,Détail,Produits laitiers,Fromage fondu 8 portions,255,1607,409785,Mariama Ba,3
+2026-05-22,Thiès,Grossiste,Épicerie salée,Huile végétale 5L,324,6230,2018520,Cheikh Gueye,2
+2026-05-24,Sud,E-commerce,Produits laitiers,Lait en poudre 400g,107,1249,133643,Aïssatou Ndiaye,4
+2026-05-25,Nord,E-commerce,Produits laitiers,Yaourt nature 4x125g,61,722,44042,Cheikh Gueye,7
+2026-05-25,Sud,E-commerce,Hygiène & Entretien,Eau de Javel 1L,139,307,42673,Mariama Ba,3
+2026-05-26,Casamance,Détail,Boissons,Eau minérale 1.5L,220,348,76560,Cheikh Gueye,3
+2026-05-26,Casamance,E-commerce,Hygiène & Entretien,Savon de Marseille 400g,133,402,53466,Moussa Fall,2
+2026-05-26,Dakar,Détail,Épicerie salée,Huile végétale 5L,445,6190,2754550,Moussa Fall,4
+2026-05-27,Casamance,E-commerce,Céréales & Farines,Maïs concassé 1kg,117,287,33579,Aïssatou Ndiaye,2
+2026-05-27,Thiès,E-commerce,Boissons,Thé Touba 200g,134,651,87234,Moussa Fall,3
+2026-06-01,Nord,Grossiste,Épicerie salée,Huile végétale 5L,367,6142,2254114,Cheikh Gueye,13
+2026-06-02,Thiès,Grossiste,Épicerie salée,Huile végétale 5L,311,6260,1946860,Cheikh Gueye,3
+2026-06-03,Sud,E-commerce,Hygiène & Entretien,Eau de Javel 1L,193,312,60216,Ibrahima Sarr,4
+2026-06-03,Thiès,E-commerce,Boissons,Thé Touba 200g,195,668,130260,Mariama Ba,3
+2026-06-04,Casamance,E-commerce,Hygiène & Entretien,Savon de Marseille 400g,139,397,55183,Mariama Ba,3
+2026-06-04,Dakar,Détail,Épicerie salée,Huile végétale 5L,407,6271,2552297,Moussa Fall,4
+2026-06-04,Dakar,E-commerce,Hygiène & Entretien,Lessive en poudre 1kg,268,854,228872,Cheikh Gueye,3
+2026-06-04,Thiès,Détail,Épicerie salée,Tomate concentrée 400g,292,447,130524,Cheikh Gueye,3
+2026-06-05,Sud,Détail,Produits laitiers,Beurre 250g,224,1474,330176,Moussa Fall,2
+2026-06-05,Thiès,E-commerce,Céréales & Farines,Maïs concassé 1kg,237,280,66360,Aïssatou Ndiaye,2
+2026-06-06,Nord,Grossiste,Hygiène & Entretien,Eau de Javel 1L,365,491,179215,Moussa Fall,10
+2026-06-07,Casamance,Détail,Produits laitiers,Beurre 250g,221,1465,323765,Ibrahima Sarr,3
+2026-06-07,Casamance,Grossiste,Céréales & Farines,Maïs concassé 1kg,331,453,149943,Moussa Fall,2
+2026-06-07,Nord,Grossiste,Hygiène & Entretien,Lessive en poudre 1kg,323,1358,438634,Cheikh Gueye,10
+2026-06-07,Sud,Détail,Céréales & Farines,Couscous de mil 500g,255,695,177225,Cheikh Gueye,3
+2026-06-08,Nord,E-commerce,Produits laitiers,Fromage fondu 8 portions,192,938,180096,Mariama Ba,9
+2026-06-08,Sud,Grossiste,Boissons,Eau minérale 1.5L,317,345,109365,Aïssatou Ndiaye,4
+2026-06-09,Casamance,Détail,Boissons,Eau minérale 1.5L,207,343,71001,Moussa Fall,4
+2026-06-09,Dakar,Détail,Boissons,Thé Touba 200g,457,1106,505442,Khady Diop,3
+2026-06-09,Dakar,Grossiste,Hygiène & Entretien,Savon de Marseille 400g,564,660,372240,Khady Diop,4
+2026-06-09,Nord,E-commerce,Hygiène & Entretien,Dentifrice 75ml,171,509,87039,Cheikh Gueye,9
+2026-06-10,Casamance,Grossiste,Céréales & Farines,Couscous de mil 500g,331,704,233024,Aïssatou Ndiaye,3
+2026-06-11,Casamance,Détail,Épicerie salée,Tomate concentrée 400g,224,448,100352,Cheikh Gueye,4
+2026-06-11,Sud,Grossiste,Produits laitiers,Fromage fondu 8 portions,415,1616,670640,Khady Diop,2
+2026-06-12,Dakar,Détail,Céréales & Farines,Farine de blé 1kg,408,544,221952,Aïssatou Ndiaye,2
+2026-06-12,Dakar,Grossiste,Boissons,Jus de bissap 1L,683,884,603772,Ibrahima Sarr,3
+2026-06-12,Sud,E-commerce,Épicerie salée,Sucre en poudre 1kg,173,477,82521,Mariama Ba,4
+2026-06-14,Sud,Détail,Produits laitiers,Fromage fondu 8 portions,261,1623,423603,Aïssatou Ndiaye,4
+2026-06-14,Thiès,Détail,Boissons,Jus de bissap 1L,294,905,266070,Moussa Fall,3
+2026-06-15,Nord,Détail,Céréales & Farines,Couscous de mil 500g,286,697,199342,Aïssatou Ndiaye,10
+2026-06-16,Dakar,Grossiste,Épicerie salée,Huile végétale 5L,557,6201,3453957,Ibrahima Sarr,2
+2026-06-17,Nord,E-commerce,Produits laitiers,Yaourt nature 4x125g,199,745,148255,Aïssatou Ndiaye,10
+2026-06-17,Nord,Grossiste,Boissons,Thé Touba 200g,339,1098,372222,Moussa Fall,12
+2026-06-18,Sud,Grossiste,Hygiène & Entretien,Eau de Javel 1L,360,507,182520,Cheikh Gueye,3
+2026-06-19,Thiès,E-commerce,Épicerie salée,Tomate concentrée 400g,207,277,57339,Ibrahima Sarr,2
+2026-06-20,Casamance,E-commerce,Boissons,Café soluble 100g,176,1136,199936,Khady Diop,3
+2026-06-20,Nord,Détail,Boissons,Café soluble 100g,249,1794,446706,Ibrahima Sarr,9
+2026-06-21,Thiès,Détail,Céréales & Farines,Mil décortiqué 1kg,285,475,135375,Moussa Fall,2
+2026-06-22,Casamance,Grossiste,Produits laitiers,Yaourt nature 4x125g,312,1202,375024,Mariama Ba,2
+2026-06-23,Casamance,E-commerce,Céréales & Farines,Maïs concassé 1kg,121,282,34122,Moussa Fall,4
+2026-06-23,Sud,E-commerce,Produits laitiers,Lait en poudre 400g,131,1223,160213,Moussa Fall,3
+2026-06-24,Nord,Détail,Boissons,Eau minérale 1.5L,275,357,98175,Moussa Fall,11
+2026-06-24,Thiès,Grossiste,Céréales & Farines,Couscous de mil 500g,390,707,275730,Aïssatou Ndiaye,2
+2026-06-25,Thiès,Grossiste,Céréales & Farines,Maïs concassé 1kg,482,457,220274,Aïssatou Ndiaye,2
+2026-06-26,Casamance,Grossiste,Hygiène & Entretien,Dentifrice 75ml,232,811,188152,Moussa Fall,4
+2026-06-26,Dakar,E-commerce,Épicerie salée,Huile végétale 5L,283,3743,1059269,Khady Diop,3
+2026-06-26,Dakar,Grossiste,Produits laitiers,Fromage fondu 8 portions,522,1629,850338,Mariama Ba,2
+2026-06-28,Dakar,E-commerce,Céréales & Farines,Mil décortiqué 1kg,360,289,104040,Cheikh Gueye,3
+2026-06-28,Sud,Grossiste,Boissons,Jus de bissap 1L,264,887,234168,Mariama Ba,3
+2026-06-28,Thiès,Grossiste,Hygiène & Entretien,Savon de Marseille 400g,439,654,287106,Mariama Ba,3
+2026-07-01,Dakar,E-commerce,Céréales & Farines,Mil décortiqué 1kg,401,304,121904,Ibrahima Sarr,3
+2026-07-03,Casamance,Détail,Épicerie salée,Tomate concentrée 400g,195,441,85995,Ibrahima Sarr,3
+2026-07-04,Nord,E-commerce,Produits laitiers,Fromage fondu 8 portions,236,975,230100,Aïssatou Ndiaye,9
+2026-07-04,Sud,Grossiste,Produits laitiers,Fromage fondu 8 portions,360,1617,582120,Cheikh Gueye,3
+2026-07-05,Thiès,Grossiste,Hygiène & Entretien,Savon de Marseille 400g,434,652,282968,Mariama Ba,3
+2026-07-06,Thiès,Grossiste,Épicerie salée,Huile végétale 5L,305,6260,1909300,Mariama Ba,3
+2026-07-07,Dakar,Grossiste,Épicerie salée,Huile végétale 5L,500,6146,3073000,Aïssatou Ndiaye,4
+2026-07-07,Nord,E-commerce,Hygiène & Entretien,Dentifrice 75ml,198,510,100980,Cheikh Gueye,8
+2026-07-07,Sud,Grossiste,Boissons,Eau minérale 1.5L,295,356,105020,Aïssatou Ndiaye,4
+2026-07-07,Thiès,E-commerce,Boissons,Thé Touba 200g,238,645,153510,Khady Diop,4
+2026-07-07,Thiès,Grossiste,Céréales & Farines,Couscous de mil 500g,353,693,244629,Mariama Ba,3
+2026-07-08,Sud,Détail,Produits laitiers,Fromage fondu 8 portions,245,1585,388325,Khady Diop,3
+2026-07-08,Sud,Détail,Céréales & Farines,Couscous de mil 500g,267,701,187167,Khady Diop,4
+2026-07-09,Sud,Grossiste,Boissons,Jus de bissap 1L,251,884,221884,Moussa Fall,3
+2026-07-11,Casamance,Grossiste,Hygiène & Entretien,Dentifrice 75ml,228,805,183540,Khady Diop,3
+2026-07-11,Thiès,Grossiste,Céréales & Farines,Maïs concassé 1kg,443,457,202451,Khady Diop,3
+2026-07-12,Casamance,Grossiste,Céréales & Farines,Couscous de mil 500g,298,688,205024,Ibrahima Sarr,2
+2026-07-12,Thiès,Détail,Céréales & Farines,Mil décortiqué 1kg,299,482,144118,Ibrahima Sarr,2
+2026-07-13,Casamance,E-commerce,Hygiène & Entretien,Savon de Marseille 400g,185,383,70855,Aïssatou Ndiaye,4
+2026-07-13,Casamance,Grossiste,Produits laitiers,Yaourt nature 4x125g,285,1189,338865,Khady Diop,3
+2026-07-13,Dakar,Détail,Épicerie salée,Huile végétale 5L,396,6176,2445696,Mariama Ba,4
+2026-07-13,Nord,Grossiste,Boissons,Thé Touba 200g,275,1105,303875,Mariama Ba,11
+2026-07-13,Thiès,E-commerce,Épicerie salée,Tomate concentrée 400g,287,264,75768,Aïssatou Ndiaye,2
+2026-07-14,Nord,Détail,Boissons,Café soluble 100g,229,1771,405559,Mariama Ba,9
+2026-07-14,Nord,Détail,Boissons,Eau minérale 1.5L,253,347,87791,Khady Diop,8
+2026-07-14,Nord,Grossiste,Hygiène & Entretien,Eau de Javel 1L,350,505,176750,Mariama Ba,14
+2026-07-14,Sud,Grossiste,Hygiène & Entretien,Eau de Javel 1L,292,498,145416,Mariama Ba,3
+2026-07-14,Thiès,E-commerce,Céréales & Farines,Maïs concassé 1kg,301,287,86387,Moussa Fall,3
+2026-07-16,Dakar,Grossiste,Boissons,Jus de bissap 1L,530,900,477000,Aïssatou Ndiaye,3
+2026-07-16,Nord,E-commerce,Produits laitiers,Yaourt nature 4x125g,230,711,163530,Ibrahima Sarr,11
+2026-07-17,Dakar,E-commerce,Hygiène & Entretien,Lessive en poudre 1kg,310,856,265360,Mariama Ba,2
+2026-07-17,Dakar,Grossiste,Produits laitiers,Fromage fondu 8 portions,454,1596,724584,Moussa Fall,2
+2026-07-18,Dakar,E-commerce,Épicerie salée,Huile végétale 5L,323,3767,1216741,Mariama Ba,3
+2026-07-18,Sud,E-commerce,Hygiène & Entretien,Eau de Javel 1L,239,299,71461,Khady Diop,3
+2026-07-21,Dakar,Détail,Céréales & Farines,Farine de blé 1kg,377,541,203957,Khady Diop,4
+2026-07-22,Nord,Grossiste,Hygiène & Entretien,Lessive en poudre 1kg,289,1369,395641,Ibrahima Sarr,10
+2026-07-23,Nord,Grossiste,Épicerie salée,Huile végétale 5L,323,6272,2025856,Moussa Fall,13
+2026-07-24,Sud,E-commerce,Épicerie salée,Sucre en poudre 1kg,114,464,52896,Aïssatou Ndiaye,2
+2026-07-24,Thiès,Détail,Boissons,Jus de bissap 1L,305,904,275720,Aïssatou Ndiaye,2
+2026-07-24,Thiès,Détail,Épicerie salée,Tomate concentrée 400g,325,446,144950,Aïssatou Ndiaye,4
+2026-07-25,Sud,Détail,Produits laitiers,Beurre 250g,236,1431,337716,Mariama Ba,2
+2026-07-26,Casamance,E-commerce,Céréales & Farines,Maïs concassé 1kg,168,286,48048,Cheikh Gueye,2
+2026-07-26,Casamance,Grossiste,Céréales & Farines,Maïs concassé 1kg,295,460,135700,Ibrahima Sarr,3
+2026-07-26,Dakar,Détail,Boissons,Thé Touba 200g,458,1109,507922,Ibrahima Sarr,2
+2026-07-27,Casamance,Détail,Produits laitiers,Beurre 250g,243,1424,346032,Ibrahima Sarr,3
+2026-07-27,Casamance,Détail,Boissons,Eau minérale 1.5L,214,345,73830,Cheikh Gueye,3
+2026-07-27,Dakar,Grossiste,Hygiène & Entretien,Savon de Marseille 400g,577,652,376204,Cheikh Gueye,3
+2026-07-27,Sud,E-commerce,Produits laitiers,Lait en poudre 400g,178,1298,231044,Khady Diop,4
+2026-07-28,Casamance,E-commerce,Boissons,Café soluble 100g,226,1106,249956,Khady Diop,2
+2026-07-28,Nord,Détail,Céréales & Farines,Couscous de mil 500g,270,705,190350,Moussa Fall,10

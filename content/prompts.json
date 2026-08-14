@@ -1,0 +1,1596 @@
+[
+  {
+    "id": "ECO-001",
+    "categorie": "Écosystème & configuration Claude",
+    "titre": "Choisir le bon outil Claude pour une tâche",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Quand vous hésitez entre plusieurs outils Claude pour une tâche précise.",
+    "prompt_template": "Voici une tâche que je dois faire : {description_tache}. Parmi Claude.ai (chat), Claude Code, Claude Cowork et Claude in Chrome, lequel est le plus adapté, et pourquoi en une phrase ?",
+    "variables": [
+      "description_tache"
+    ],
+    "exemple_rempli": "Voici une tâche que je dois faire : comparer les tarifs de 5 concurrents sur leurs sites web. Parmi Claude.ai (chat), Claude Code, Claude Cowork et Claude in Chrome, lequel est le plus adapté, et pourquoi en une phrase ?",
+    "resultat_attendu": "Une recommandation d'outil justifiée en une phrase, sans avoir à connaître l'arbre de décision par cœur.",
+    "module_lie": 1
+  },
+  {
+    "id": "ECO-002",
+    "categorie": "Écosystème & configuration Claude",
+    "titre": "Générer une Skill à partir d'une tâche répétitive",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Pour transformer une tâche que vous refaites chaque semaine en méthode réutilisable.",
+    "prompt_template": "Aide-moi à créer une Skill nommée `{nom_skill}`. Elle doit {description_tache}, avec exactement ces règles : {liste_regles}. Elle ne doit jamais {erreur_a_eviter}.",
+    "variables": [
+      "description_tache",
+      "erreur_a_eviter",
+      "liste_regles",
+      "nom_skill"
+    ],
+    "exemple_rempli": "Aide-moi à créer une Skill nommée `resume-reunion-client`. Elle doit transformer des notes brutes de réunion en compte-rendu structuré, avec exactement ces règles : 4 sections (Décisions, Actions, Blocages, Prochaine étape). Elle ne doit jamais inventer une décision absente des notes.",
+    "resultat_attendu": "Un fichier `SKILL.md` complet, prêt à tester immédiatement.",
+    "module_lie": 1
+  },
+  {
+    "id": "ECO-003",
+    "categorie": "Écosystème & configuration Claude",
+    "titre": "Tester une Skill sur un cas réel avant de la valider",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Applique la Skill `{nom_skill}` à ces notes/ce texte : {contenu}. Si un élément attendu manque dans le résultat, explique-moi pourquoi.",
+    "variables": [
+      "contenu",
+      "nom_skill"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une validation concrète que la Skill fonctionne comme prévu, avec diagnostic en cas d'écart.",
+    "module_lie": 1
+  },
+  {
+    "id": "ECO-004",
+    "categorie": "Écosystème & configuration Claude",
+    "titre": "Diagnostiquer un problème d'installation",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai (depuis un autre appareil si l'installation bloque)",
+    "contexte_usage": "",
+    "prompt_template": "J'essaie d'installer Claude Code sur {Mac/Windows} et j'obtiens ce message : {message_erreur}. Que dois-je vérifier, étape par étape ?",
+    "variables": [
+      "Mac/Windows",
+      "message_erreur"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un diagnostic pas-à-pas sans jargon excessif.",
+    "module_lie": 1
+  },
+  {
+    "id": "ECO-005",
+    "categorie": "Écosystème & configuration Claude",
+    "titre": "Choisir quel connecteur MCP activer en premier",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "",
+    "prompt_template": "Voici les outils que j'utilise le plus au quotidien : {liste_outils}. Si je ne pouvais connecter qu'un seul connecteur MCP pour commencer, lequel me ferait gagner le plus de temps immédiatement, et pourquoi ?",
+    "variables": [
+      "liste_outils"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une priorisation justifiée plutôt qu'une liste générique de tous les connecteurs disponibles.",
+    "module_lie": 1
+  },
+  {
+    "id": "ECO-006",
+    "categorie": "Écosystème & configuration Claude",
+    "titre": "Rédiger son fichier de mémoire personnelle",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Aide-moi à rédiger un fichier de mémoire personnelle pour mes conversations Claude. Voici mon métier : {metier}. Mes clients/projets récurrents : {liste}. Mes préférences de ton et de format : {preferences}.",
+    "variables": [
+      "liste",
+      "metier",
+      "preferences"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un fichier court (10-15 lignes) à réutiliser en début de nouvelle conversation.",
+    "module_lie": 1
+  },
+  {
+    "id": "ECO-007",
+    "categorie": "Écosystème & configuration Claude",
+    "titre": "Résumer une conversation longue avant de repartir à neuf",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Quand une conversation devient longue ou mélange plusieurs sujets.",
+    "prompt_template": "Résume toutes les décisions et informations importantes de cette conversation en moins de 10 lignes, pour que je puisse les recopier au début d'un nouveau chat.",
+    "variables": [],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un résumé compact réutilisable, qui évite de perdre le contexte utile en changeant de conversation.",
+    "module_lie": 1
+  },
+  {
+    "id": "ECO-008",
+    "categorie": "Écosystème & configuration Claude",
+    "titre": "Repérer le signal qu'il faut changer de conversation",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "",
+    "prompt_template": "Dans cette conversation, est-ce que tu remarques une contradiction avec quelque chose que j'ai dit plus tôt, ou une information que tu sembles avoir oubliée ? Réponds honnêtement, même si la réponse est non.",
+    "variables": [],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une auto-vérification qui aide à décider s'il est temps de résumer et repartir (voir Partie 4 de la leçon).",
+    "module_lie": 1
+  },
+  {
+    "id": "ECO-009",
+    "categorie": "Écosystème & configuration Claude",
+    "titre": "Évaluer si une tâche mérite une Skill ou une automatisation complète",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Pour ne pas construire une Skill sur une tâche trop rare, ou au contraire sous-exploiter une tâche très répétitive (lien vers Module 5).",
+    "prompt_template": "Je fais cette tâche {frequence} : {description_tache}. Est-ce que ça vaut le coup d'en faire une Skill, ou est-ce que ça mériterait directement une automatisation complète sans intervention humaine ?",
+    "variables": [
+      "description_tache",
+      "frequence"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une recommandation Skill vs automatisation, avec justification liée à la fréquence et à la variabilité de la tâche.",
+    "module_lie": 1
+  },
+  {
+    "id": "ECO-010",
+    "categorie": "Écosystème & configuration Claude",
+    "titre": "Comparer deux façons de faire la même tâche pour choisir la plus rapide",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "",
+    "prompt_template": "Je veux faire {tache}. Est-ce plus rapide de te le demander directement dans le chat, ou de passer par Claude Code ? Explique la différence pour ce cas précis.",
+    "variables": [
+      "tache"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une décision éclairée cas par cas, plutôt qu'une règle rigide appliquée sans réflexion.",
+    "module_lie": 1
+  },
+  {
+    "id": "COM-001",
+    "categorie": "Communication & prompting expert",
+    "titre": "Construire un prompt complet avec la méthode C.L.A.R.T.É",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Point de départ pour n'importe quelle demande de rédaction ou de production de contenu, quand vous partez d'une idée encore floue.",
+    "prompt_template": "Je veux te demander {tache_a_realiser}. Avant que je formule ma demande complète, aide-moi à clarifier : quel est le contexte utile, quel livrable exact j'attends, à qui il est destiné, quelles contraintes je dois te donner, quel ton, et si j'ai un exemple à te fournir.",
+    "variables": [
+      "tache_a_realiser"
+    ],
+    "exemple_rempli": "Je veux te demander de rédiger une réponse à un client mécontent. Avant que je formule ma demande complète, aide-moi à clarifier : quel est le contexte utile, quel livrable exact j'attends, à qui il est destiné, quelles contraintes je dois te donner, quel ton, et si j'ai un exemple à te fournir.",
+    "resultat_attendu": "Une liste de questions de clarification qui vous aide à construire vous-même un prompt C.L.A.R.T.É complet, avant même de lancer la vraie demande.",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-002",
+    "categorie": "Communication & prompting expert",
+    "titre": "Réécrire un mauvais prompt existant avec C.L.A.R.T.É",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Quand un prompt court a donné un résultat décevant et que vous voulez comprendre pourquoi avant de recommencer.",
+    "prompt_template": "Voici le prompt que je viens d'utiliser et qui a donné un résultat décevant : '{prompt_original}'. Quelles informations C.L.A.R.T.É (Contexte, Livrable, Audience, Restrictions, Ton, Exemples) manquaient probablement ? Aide-moi à le reformuler complètement.",
+    "variables": [
+      "prompt_original"
+    ],
+    "exemple_rempli": "Voici le prompt que je viens d'utiliser et qui a donné un résultat décevant : 'Fais-moi un rapport'. Quelles informations C.L.A.R.T.É manquaient probablement ? Aide-moi à le reformuler complètement.",
+    "resultat_attendu": "Un diagnostic des lettres manquantes, puis une version C.L.A.R.T.É complète prête à être testée.",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-003",
+    "categorie": "Communication & prompting expert",
+    "titre": "Rédiger un email de relance client personnalisé",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Relance d'un client ou partenaire sur une facture, une réponse en attente, ou un engagement pris.",
+    "prompt_template": "Je suis {votre_activite}. Rédige un email de relance à {nom_client} : {objet_relance}, {duree_attente} sans réponse. L'email s'adresse à {nom_contact}, {relation_avec_contact}. Maximum {longueur_max} mots, ton {ton_souhaite}, ne jamais {chose_a_eviter}.",
+    "variables": [
+      "chose_a_eviter",
+      "duree_attente",
+      "longueur_max",
+      "nom_client",
+      "nom_contact",
+      "objet_relance",
+      "relation_avec_contact",
+      "ton_souhaite",
+      "votre_activite"
+    ],
+    "exemple_rempli": "Je suis consultante indépendante en gestion de projets. Rédige un email de relance à DELTA Distribution : facture de 850 000 FCFA impayée, 3 semaines sans réponse. L'email s'adresse à Awa Ndiaye, ma contact habituelle depuis 2 ans. Maximum 120 mots, ton direct et professionnel, ne jamais mentionner de menace juridique à ce stade.",
+    "resultat_attendu": "Un email prêt à envoyer, sans reformulation nécessaire.",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-004",
+    "categorie": "Communication & prompting expert",
+    "titre": "Demander un plan avant l'exécution d'une mission complexe",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "Sur une mission à plusieurs contraintes (budget, délai, format imposé) où une erreur de direction coûterait cher à corriger après rédaction complète.",
+    "prompt_template": "{brief_complet_de_la_mission}. Avant de produire la version complète, présente-moi en 3-4 puces ton plan : ce que tu vas mettre en avant, dans quel ordre, et comment tu respectes chaque contrainte donnée. J'attends ta validation de plan avant que tu rédiges.",
+    "variables": [
+      "brief_complet_de_la_mission"
+    ],
+    "exemple_rempli": "Prépare une proposition commerciale d'une page pour une PME de distribution, budget maximum 1 200 000 FCFA sur 3 mois, besoin : tableau de suivi hebdomadaire des stocks. Avant de produire la version complète, présente-moi ton plan...",
+    "resultat_attendu": "Un plan en 3-4 puces à valider ou corriger avant toute rédaction complète.",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-005",
+    "categorie": "Communication & prompting expert",
+    "titre": "Transformer un prompt réussi en gabarit réutilisable",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "Après avoir obtenu un bon résultat une fois, pour ne jamais avoir à réécrire le même prompt de zéro sur un cas similaire.",
+    "prompt_template": "Voici un prompt qui a bien fonctionné : '{prompt_reussi}'. Transforme-le en gabarit réutilisable en remplaçant par des variables entre accolades toutes les informations qui changeraient si je l'utilisais pour un autre cas similaire.",
+    "variables": [
+      "prompt_reussi"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un gabarit à variables nommées clairement, réutilisable sans réécriture complète.",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-006",
+    "categorie": "Communication & prompting expert",
+    "titre": "Lancer un brief de workflow multi-étapes",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "Première étape d'un workflow brief → brouillon → critique → version finale, sur un livrable à enjeu réel.",
+    "prompt_template": "{contexte_et_role}. Produis un premier brouillon de {type_livrable} pour {destinataire}, en respectant : {liste_contraintes}. Je vais te demander une critique de ce brouillon avant la version finale, donc ne cherche pas à produire un résultat parfait du premier coup — un bon point de départ suffit.",
+    "variables": [
+      "contexte_et_role",
+      "destinataire",
+      "liste_contraintes",
+      "type_livrable"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un brouillon exploitable comme base de travail, pas nécessairement final.",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-007",
+    "categorie": "Communication & prompting expert",
+    "titre": "Faire critiquer honnêtement un brouillon",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "Étape de critique d'un workflow multi-étapes, sur un document qui sera lu par un tiers (client, employeur, public).",
+    "prompt_template": "Relis ce brouillon avec un œil critique, du point de vue de {audience_cible} : qu'est-ce qui pourrait ne pas convaincre, être trop long, trop vague, ou mal passer ? Sois honnête, ne me dis pas que tout est parfait si ce n'est pas le cas.",
+    "variables": [
+      "audience_cible"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une liste de faiblesses concrètes et exploitables, pas un simple compliment poli.",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-008",
+    "categorie": "Communication & prompting expert",
+    "titre": "Produire la version finale après critique",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "Dernière étape d'un workflow multi-étapes, une fois la critique reçue et les points à corriger identifiés.",
+    "prompt_template": "Intègre uniquement ce(s) point(s) de la critique : {points_retenus}. Ne touche pas au reste du texte qui fonctionne déjà. Donne-moi la version finale complète.",
+    "variables": [
+      "points_retenus"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une version finale ciblée, sans régression sur les parties déjà satisfaisantes du brouillon.",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-009",
+    "categorie": "Communication & prompting expert",
+    "titre": "Rédiger une proposition commerciale complète pour un nouveau prospect",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Réponse à une sollicitation d'un nouveau client potentiel, avec budget et besoin déjà exprimés.",
+    "prompt_template": "Je suis {votre_activite}. Rédige une proposition commerciale d'une page pour {nom_prospect}, {secteur_prospect}, besoin exprimé : {besoin_exprime}. Budget maximum : {budget_max} sur {duree_mission}. Lue par {decideur_prospect}, qui compare plusieurs prestataires. Mets en avant : {points_forts}. Ne promets jamais un résultat chiffré non garanti. Ton professionnel orienté résultat.",
+    "variables": [
+      "besoin_exprime",
+      "budget_max",
+      "decideur_prospect",
+      "duree_mission",
+      "nom_prospect",
+      "points_forts",
+      "secteur_prospect",
+      "votre_activite"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une proposition d'une page prête à être critiquée puis finalisée (voir COM-007/COM-008).",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-010",
+    "categorie": "Communication & prompting expert",
+    "titre": "Extraire une information structurée d'un document réel",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai (upload de fichier)",
+    "contexte_usage": "Analyse d'un contrat, rapport ou tableau reçu, pour en extraire les informations qui comptent sans le relire ligne par ligne.",
+    "prompt_template": "Voici {type_document}. Extrais dans un tableau : {liste_champs_a_extraire}. Si une information demandée n'apparaît pas dans le document, écris 'non précisé' plutôt que de la déduire ou de l'inventer.",
+    "variables": [
+      "liste_champs_a_extraire",
+      "type_document"
+    ],
+    "exemple_rempli": "Voici un extrait de contrat de prestation. Extrais dans un tableau : montants et modalités de paiement, échéances et délais, clauses de résiliation, obligations de chaque partie. Si une information demandée n'apparaît pas dans le document, écris 'non précisé'.",
+    "resultat_attendu": "Un tableau structuré, à vérifier systématiquement contre l'original avant utilisation.",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-011",
+    "categorie": "Communication & prompting expert",
+    "titre": "Résumer un document long en points clés pour un décideur pressé",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai (upload de fichier)",
+    "contexte_usage": "Un rapport ou compte-rendu volumineux doit être compris en quelques minutes par quelqu'un qui n'a pas le temps de le lire en entier.",
+    "prompt_template": "Voici {type_document}. Résume-le en 5 points maximum pour {destinataire}, qui a {temps_disponible} pour le lire. Priorise les informations qui demandent une décision ou une action de sa part.",
+    "variables": [
+      "destinataire",
+      "temps_disponible",
+      "type_document"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un résumé actionnable, pas une simple compression du texte original.",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-012",
+    "categorie": "Communication & prompting expert",
+    "titre": "Comparer deux versions d'un même texte pour choisir la meilleure",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Quand vous avez deux versions d'un même texte (par exemple un ancien et un nouveau brouillon) et hésitez sur laquelle envoyer.",
+    "prompt_template": "Voici deux versions du même texte : Version A : {version_a}. Version B : {version_b}. Pour une audience de type {audience_cible}, laquelle est la plus efficace, et pourquoi en 3 points maximum ?",
+    "variables": [
+      "audience_cible",
+      "version_a",
+      "version_b"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une recommandation justifiée plutôt qu'une préférence stylistique non expliquée.",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-013",
+    "categorie": "Communication & prompting expert",
+    "titre": "Adapter le ton d'un texte existant à une nouvelle audience",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Réutiliser un contenu déjà écrit (email, présentation, post) pour un public différent sans repartir de zéro.",
+    "prompt_template": "Voici un texte destiné à {audience_originale} : {texte_original}. Adapte-le pour {nouvelle_audience}, en gardant le même message de fond mais en changeant : {elements_a_changer}.",
+    "variables": [
+      "audience_originale",
+      "elements_a_changer",
+      "nouvelle_audience",
+      "texte_original"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une version adaptée qui conserve le fond tout en changeant la forme pour le nouveau public.",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-014",
+    "categorie": "Communication & prompting expert",
+    "titre": "Vérifier la cohérence d'un document avant envoi",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "Dernière vérification avant d'envoyer un document important (contrat, proposition, rapport), pour repérer des incohérences internes.",
+    "prompt_template": "Relis ce document et signale toute incohérence interne : un chiffre répété différemment à deux endroits, une date qui ne correspond pas à une autre partie du texte, une affirmation qui se contredit. Ne relève que des incohérences factuelles, pas des préférences de style.",
+    "variables": [],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une liste d'incohérences factuelles concrètes à corriger avant envoi, ou la confirmation qu'aucune n'a été détectée.",
+    "module_lie": 2
+  },
+  {
+    "id": "COM-015",
+    "categorie": "Communication & prompting expert",
+    "titre": "Construire un prompt réutilisable pour répondre à une objection commerciale récurrente",
+    "niveau": "Avancé",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Quand vous entendez régulièrement la même objection de prospects ou clients (\"c'est trop cher\", \"je n'ai pas le temps\") et voulez une réponse cohérente et testée plutôt qu'improvisée chaque fois.",
+    "prompt_template": "Je suis {votre_activite}. Un prospect/client m'objecte régulièrement : '{objection_recurrente}'. Aide-moi à construire une réponse de {longueur_max} qui reconnaît l'objection sans la balayer, puis apporte {argument_cle}, sans jamais {chose_a_eviter}. Ton {ton_souhaite}.",
+    "variables": [
+      "argument_cle",
+      "chose_a_eviter",
+      "longueur_max",
+      "objection_recurrente",
+      "ton_souhaite",
+      "votre_activite"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un gabarit de réponse réutilisable à chaque fois que la même objection revient, plutôt qu'une improvisation à chaque échange.",
+    "module_lie": 2
+  },
+  {
+    "id": "DATA-001",
+    "categorie": "Analyse de données",
+    "titre": "Diagnostic complet avant tout nettoyage",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Première étape systématique face à n'importe quel fichier de données reçu d'un tiers, avant de corriger quoi que ce soit.",
+    "prompt_template": "Voici un fichier de données ({nom_fichier}). Avant de le corriger, fais-moi un diagnostic complet : doublons stricts, valeurs manquantes par colonne, incohérences de format sur {colonnes_texte}, formats mélangés sur {colonnes_date}, et valeurs qui semblent aberrantes. Ne corrige rien encore.",
+    "variables": [
+      "colonnes_date",
+      "colonnes_texte",
+      "nom_fichier"
+    ],
+    "exemple_rempli": "Voici un fichier de données (ventes-delta-distribution-brut.xlsx). Avant de le corriger, fais-moi un diagnostic complet : doublons stricts, valeurs manquantes par colonne, incohérences de format sur region, formats mélangés sur date_vente, et valeurs qui semblent aberrantes. Ne corrige rien encore.",
+    "resultat_attendu": "Une liste précise et quantifiée des défauts, sans aucune correction appliquée.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-002",
+    "categorie": "Analyse de données",
+    "titre": "Nettoyage étape par étape avec justification",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Corrige le fichier dans cet ordre : {liste_etapes}. Résume ce qui a changé à chaque étape et pourquoi.",
+    "variables": [
+      "liste_etapes"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un nettoyage traçable, étape par étape, avec un résumé vérifiable à chaque étape plutôt qu'une correction globale opaque.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-003",
+    "categorie": "Analyse de données",
+    "titre": "Choisir une méthode de traitement des valeurs manquantes",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "J'ai {nombre} valeurs manquantes sur la colonne {colonne}. Quelles sont mes options (suppression, imputation par moyenne/médiane, imputation par groupe) et laquelle recommandes-tu pour ce cas précis, avec les risques de chaque choix ?",
+    "variables": [
+      "colonne",
+      "nombre"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une décision méthodologique justifiée, pas une correction automatique appliquée sans réflexion.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-004",
+    "categorie": "Analyse de données",
+    "titre": "Détecter les anomalies dans un tableau de ventes",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Repérer une variation anormale (rupture de stock, pic suspect) dans une série de ventes.",
+    "prompt_template": "Analyse les ventes de {periode} pour {nom_fichier} et signale toute variation supérieure à {seuil_anomalie} par rapport à la moyenne habituelle, par {dimension_analyse}.",
+    "variables": [
+      "dimension_analyse",
+      "nom_fichier",
+      "periode",
+      "seuil_anomalie"
+    ],
+    "exemple_rempli": "Analyse les ventes de février à juillet 2026 pour ventes-delta-distribution-nettoye.xlsx et signale toute variation supérieure à 40 % par rapport à la moyenne habituelle, par région et par mois.",
+    "resultat_attendu": "Une liste des anomalies significatives, avec le mois et la région concernés, pas une liste de toutes les variations mineures.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-005",
+    "categorie": "Analyse de données",
+    "titre": "Générer un tableau croisé dynamique expliqué",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Crée un tableau croisé dynamique qui montre {mesure} par {dimension_ligne} (en lignes) et {dimension_colonne} (en colonnes). Explique ensuite en une phrase ce que révèle ce tableau.",
+    "variables": [
+      "dimension_colonne",
+      "dimension_ligne",
+      "mesure"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un tableau croisé dynamique correct, accompagné d'une lecture business en une phrase.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-006",
+    "categorie": "Analyse de données",
+    "titre": "Obtenir une formule Excel/Sheets expliquée",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "",
+    "prompt_template": "Écris-moi la formule Excel qui calcule {calcul_voulu} en filtrant sur {conditions}, et explique chaque partie de la formule.",
+    "variables": [
+      "calcul_voulu",
+      "conditions"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une formule fonctionnelle accompagnée d'une explication compréhensible sans être expert Excel.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-007",
+    "categorie": "Analyse de données",
+    "titre": "Générer et comprendre une requête SQL simple",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Pour lire et comprendre une requête générée sur une base ventes/clients, sans devoir l'écrire seul.",
+    "prompt_template": "Écris une requête SQL qui calcule {mesure} par {dimension} pour {periode}, dans une table {nom_table} qui a les colonnes {liste_colonnes}. Explique-moi chaque clause comme si je n'avais jamais écrit de SQL.",
+    "variables": [
+      "dimension",
+      "liste_colonnes",
+      "mesure",
+      "nom_table",
+      "periode"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une requête correcte accompagnée d'une explication clause par clause (SELECT, FROM, WHERE, GROUP BY).",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-008",
+    "categorie": "Analyse de données",
+    "titre": "Faire adapter une requête SQL existante",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Voici une requête SQL : {requete}. Modifie-la pour qu'elle {nouvelle_condition}, et explique ce qui change par rapport à la version originale.",
+    "variables": [
+      "nouvelle_condition",
+      "requete"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une variante de la requête, avec une comparaison explicite de ce qui a changé — utile pour apprendre en modifiant plutôt qu'en écrivant de zéro.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-009",
+    "categorie": "Analyse de données",
+    "titre": "Reproduire un nettoyage Excel en pandas (niveau 2)",
+    "niveau": "Avancé",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Quand un fichier devient trop volumineux pour Excel, ou qu'un nettoyage doit être répété régulièrement.",
+    "prompt_template": "Ouvre {nom_fichier} avec pandas et applique le même nettoyage qu'on a fait manuellement dans Excel : {liste_etapes}. Explique ce que fait chaque ligne du script généré.",
+    "variables": [
+      "liste_etapes",
+      "nom_fichier"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un script pandas court et commenté, produisant le même résultat que le nettoyage manuel — vérifiable en comparant le nombre de lignes final.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-010",
+    "categorie": "Analyse de données",
+    "titre": "Comprendre un script R reçu d'un tiers",
+    "niveau": "Avancé",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Quand un partenaire ou un chercheur envoie un script R et qu'il faut en comprendre le résultat sans le réécrire.",
+    "prompt_template": "Voici un script R : {script}. Explique-moi en français, sans jargon statistique, ce qu'il calcule et ce que signifie son résultat pour mon activité.",
+    "variables": [
+      "script"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une explication en langage métier, sans nécessité de comprendre la syntaxe R par soi-même.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-011",
+    "categorie": "Analyse de données",
+    "titre": "Recommander un type de graphique selon la question",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "",
+    "prompt_template": "Je veux montrer {ce_que_je_veux_montrer} pour {objectif_business}. Quel type de graphique recommandes-tu, et pourquoi celui-là plutôt qu'un autre ?",
+    "variables": [
+      "ce_que_je_veux_montrer",
+      "objectif_business"
+    ],
+    "exemple_rempli": "Je veux montrer l'évolution de la quantité vendue dans la région Nord sur 6 mois pour visualiser la chute liée à la rupture de stock. Quel type de graphique recommandes-tu, et pourquoi celui-là plutôt qu'un autre ?",
+    "resultat_attendu": "Une recommandation justifiée (courbe, barres, camembert...), pas seulement le graphique produit sans explication.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-012",
+    "categorie": "Analyse de données",
+    "titre": "Construire un dashboard simple",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "À partir de {nom_fichier}, propose-moi une structure de dashboard à 3 graphiques maximum qui répond à cette question business : {question_business}. Justifie chaque graphique choisi.",
+    "variables": [
+      "nom_fichier",
+      "question_business"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une proposition de dashboard simple et priorisé, pas une liste exhaustive de tous les graphiques possibles.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-013",
+    "categorie": "Analyse de données",
+    "titre": "Rédiger un insight business chiffré",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "Transformer un résultat d'analyse brut en recommandation actionnable pour un décideur non-technique.",
+    "prompt_template": "À partir de ce résultat d'analyse : {resultat_brut}, rédige un insight business en 3 parties : constat (1 phrase), chiffrage précis, recommandation actionnable. Pas de jargon technique.",
+    "variables": [
+      "resultat_brut"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un insight structuré et compréhensible par un décideur, avec un chiffre précis et une action concrète à la fin.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-014",
+    "categorie": "Analyse de données",
+    "titre": "Vérifier la cohérence d'un chiffrage avant de le présenter",
+    "niveau": "Avancé",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Voici mon calcul de {ce_qui_est_chiffre} : {methode_de_calcul}. Vérifie s'il y a une erreur de logique ou une hypothèse fragile avant que je le présente à {audience}.",
+    "variables": [
+      "audience",
+      "ce_qui_est_chiffre",
+      "methode_de_calcul"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une relecture critique du raisonnement, pas juste une validation automatique du calcul.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-015",
+    "categorie": "Analyse de données",
+    "titre": "Comparer deux périodes ou deux segments",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Compare {segment_A} et {segment_B} sur {mesure} pendant {periode}, et dis-moi si l'écart est significatif ou s'il pourrait être dû au hasard/à la taille de l'échantillon.",
+    "variables": [
+      "mesure",
+      "periode",
+      "segment_A",
+      "segment_B"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une comparaison chiffrée accompagnée d'une mise en garde sur la fiabilité de l'écart observé, pas une affirmation catégorique non nuancée.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-016",
+    "categorie": "Analyse de données",
+    "titre": "Distinguer corrélation et cause avant de conclure",
+    "niveau": "Avancé",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Avant de présenter une recommandation basée sur deux indicateurs qui évoluent ensemble.",
+    "prompt_template": "J'observe que {indicateur_A} et {indicateur_B} évoluent ensemble dans mes données. Est-ce que ça prouve un lien de cause à effet, ou juste une corrélation ? Comment formuler ma recommandation de façon honnête ?",
+    "variables": [
+      "indicateur_A",
+      "indicateur_B"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une formulation nuancée de la recommandation, qui ne présente pas une corrélation comme une preuve de causalité.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-017",
+    "categorie": "Analyse de données",
+    "titre": "Préparer une base ventes/clients simplifiée pour une démo SQL",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "À partir de {nom_fichier}, propose-moi une structure de 2 tables SQL ({table_1} et {table_2}) qui permettrait de répondre à des questions comme {exemple_question}, avec les colonnes et types de chacune.",
+    "variables": [
+      "exemple_question",
+      "nom_fichier",
+      "table_1",
+      "table_2"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une structure de tables simple et cohérente, prête à être utilisée pour s'exercer aux requêtes SQL.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-018",
+    "categorie": "Analyse de données",
+    "titre": "Estimer une perte ou un gain business à partir d'une variation",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Sur {periode}, {indicateur} est passé de {valeur_normale} à {valeur_anormale}. Aide-moi à estimer l'impact financier de cet écart, en explicitant chaque étape du calcul.",
+    "variables": [
+      "indicateur",
+      "periode",
+      "valeur_anormale",
+      "valeur_normale"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un chiffrage d'impact avec le raisonnement visible à chaque étape, réutilisable pour d'autres variations similaires.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-019",
+    "categorie": "Analyse de données",
+    "titre": "Choisir entre Excel, SQL et Python pour une tâche donnée",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Éviter de sur-outiller (Python pour 50 lignes) ou de sous-outiller (Excel pour 2 millions de lignes) une tâche d'analyse.",
+    "prompt_template": "J'ai une tâche d'analyse : {description_tache}, sur un fichier d'environ {volume_donnees} lignes. Excel, SQL ou Python (pandas) est le plus adapté, et pourquoi ?",
+    "variables": [
+      "description_tache",
+      "volume_donnees"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une recommandation d'outil proportionnée au volume et à la complexité réels de la tâche, pas un réflexe systématique vers l'outil le plus avancé.",
+    "module_lie": 3
+  },
+  {
+    "id": "DATA-020",
+    "categorie": "Analyse de données",
+    "titre": "Préparer la restitution d'une analyse à un public non-technique",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "",
+    "prompt_template": "Voici mes 3 insights chiffrés : {liste_insights}. Reformule-les pour une présentation orale de 5 minutes à des décideurs non-techniques, avec une phrase d'accroche par insight et sans jargon d'analyste.",
+    "variables": [
+      "liste_insights"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une version orale, courte et sans jargon, prête pour une réunion de restitution — pas une reformulation qui reste aussi technique que l'original.",
+    "module_lie": 3
+  },
+  {
+    "id": "DEV-001",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Décrire un projet d'application complet avant de le lancer",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Avant de démarrer n'importe quel projet d'application ou de site, pour éviter les allers-retours dus à une description trop vague.",
+    "prompt_template": "Je veux construire {type d'application}. Contexte d'usage : {qui va l'utiliser et pourquoi}. Données ou contenu disponible : {description précise}. Résultat attendu : {forme concrète}. Contraintes : {style, plateforme, limites}.",
+    "variables": [
+      "description précise",
+      "forme concrète",
+      "qui va l'utiliser et pourquoi",
+      "style, plateforme, limites",
+      "type d'application"
+    ],
+    "exemple_rempli": "Je veux construire un dashboard Streamlit. Contexte d'usage : mon client DELTA Distribution doit pouvoir suivre ses ventes mensuelles sans me redemander un rapport. Données disponibles : un fichier CSV avec les colonnes date_vente, region, canal_vente, quantite, montant_total_fcfa. Résultat attendu : une page web avec 4 indicateurs et 2 graphiques. Contraintes : rester lisible pour un non-technicien.",
+    "resultat_attendu": "Un projet structuré et fonctionnel dès la première génération, sans étape de clarification supplémentaire.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-002",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Générer un dashboard Streamlit à partir d'un fichier de données",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Crée un dashboard Streamlit qui charge le fichier {nom_fichier} (colonnes : {liste_colonnes}). Affiche : {liste_indicateurs_et_graphiques souhaités}.",
+    "variables": [
+      "liste_colonnes",
+      "liste_indicateurs_et_graphiques souhaités",
+      "nom_fichier"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un fichier `app.py` et un `requirements.txt` prêts à être lancés avec `streamlit run app.py`.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-003",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Ajouter des filtres interactifs à un dashboard existant",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Une fois le dashboard de base fonctionnel, pour le rendre exploitable par la personne qui le consulte.",
+    "prompt_template": "Ajoute des filtres dans une barre latérale pour {liste_des_champs_a_filtrer}, et applique-les à tous les graphiques et indicateurs de la page.",
+    "variables": [
+      "liste_des_champs_a_filtrer"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une barre latérale avec des sélecteurs, et un dashboard qui se met à jour dynamiquement selon les choix filtrés.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-004",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Créer une alerte visuelle automatique sur un seuil métier",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Pour signaler automatiquement une anomalie (chute de ventes, dépassement de seuil) sans avoir à la chercher soi-même chaque mois.",
+    "prompt_template": "Ajoute une alerte visuelle qui se déclenche automatiquement si {condition métier précise, ex. le chiffre d'affaires d'une région tombe sous 60% de la moyenne des autres régions sur un mois}. Affiche un message explicite quand elle se déclenche.",
+    "variables": [
+      "condition métier précise, ex. le chiffre d'affaires d'une région tombe sous 60% de la moyenne des autres régions sur un mois"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un encadré ou un message conditionnel qui n'apparaît que lorsque l'anomalie est réellement détectée dans les données.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-005",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Créer une page vitrine à partir d'une charte graphique",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Crée une page HTML/CSS unique pour présenter {votre offre}. Structure : en-tête avec accroche, section problème, section offre en {nombre} blocs, une preuve, un tarif, un appel à l'action final. Couleurs exactes : {couleurs en hexadécimal}. {contraintes de style, ex. coins arrondis}.",
+    "variables": [
+      "contraintes de style, ex. coins arrondis",
+      "couleurs en hexadécimal",
+      "nombre",
+      "votre offre"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un fichier `index.html` (et éventuellement `style.css`) prêt à être ouvert dans un navigateur, cohérent avec la charte donnée.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-006",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Adapter le texte d'une page vitrine au point de vue du client",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code ou Claude.ai",
+    "contexte_usage": "Quand une page vitrine parle trop de soi (\"je sais faire...\") plutôt que du problème du client.",
+    "prompt_template": "Relis le texte de cette section et reformule-le du point de vue du client : quel problème concret il vit, pas ce que je sais faire techniquement. Voici le texte actuel : {texte}.",
+    "variables": [
+      "texte"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un texte centré sur la douleur/le bénéfice client, sans jargon technique visible.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-007",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Diagnostiquer une erreur avant de la corriger",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Dès qu'une application affiche un message d'erreur — première réaction à avoir, avant toute demande de correction.",
+    "prompt_template": "Voici l'erreur exacte que j'obtiens : {collez le message d'erreur complet}. Avant de corriger quoi que ce soit, explique-moi en une phrase simple ce que ça signifie et à quelle ligne ça se produit.",
+    "variables": [
+      "collez le message d'erreur complet"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une explication compréhensible du problème, sans jargon excessif, avant toute modification du code.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-008",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Vérifier une hypothèse de bug avant de valider une correction",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Peux-tu me montrer {l'information réelle à vérifier, ex. les noms exacts des colonnes de ce fichier / le contenu de ce dossier / la valeur actuelle de cette variable} pour que je vérifie l'hypothèse avant de corriger ?",
+    "variables": [
+      "l'information réelle à vérifier, ex. les noms exacts des colonnes de ce fichier / le contenu de ce dossier / la valeur actuelle de cette variable"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une confirmation ou une infirmation factuelle de l'hypothèse de diagnostic, plutôt qu'une correction appliquée à l'aveugle.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-009",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Demander une correction ciblée sans réécriture complète",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Une fois le diagnostic confirmé, pour corriger sans risquer de casser ce qui fonctionne déjà.",
+    "prompt_template": "Le problème vient de {élément précis identifié}. Corrige uniquement {la ligne/la fonction concernée}, sans modifier le reste du fichier.",
+    "variables": [
+      "la ligne/la fonction concernée",
+      "élément précis identifié"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une modification localisée et vérifiable, qui laisse intact le reste du projet.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-010",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Vérifier la cohérence métier d'un résultat après correction",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Après une correction, pour s'assurer que l'absence d'erreur affichée ne masque pas un résultat faux.",
+    "prompt_template": "Maintenant que l'erreur est corrigée, peux-tu vérifier que {le chiffre/la tendance} affiché est cohérent avec {référence de comparaison, ex. mon calcul précédent, l'ordre de grandeur attendu} ?",
+    "variables": [
+      "le chiffre/la tendance",
+      "référence de comparaison, ex. mon calcul précédent, l'ordre de grandeur attendu"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une double vérification qui distingue \"ça s'affiche\" de \"c'est juste\".",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-011",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Préparer un projet pour le déploiement",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Vérifie que mon fichier requirements.txt liste bien toutes les librairies importées dans app.py, et que tous les chemins de fichiers sont relatifs (pas de chemin propre à ma machine).",
+    "variables": [],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un projet prêt à être déployé sans erreur d'import ou de fichier introuvable une fois en ligne.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-012",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Créer un dépôt GitHub et y pousser son code",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Pour la première fois qu'on utilise Git/GitHub, sans expérience préalable.",
+    "prompt_template": "Aide-moi à créer un dépôt GitHub pour ce projet et à y pousser mon code, étape par étape, en m'expliquant chaque commande avant de l'exécuter.",
+    "variables": [],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un dépôt GitHub fonctionnel contenant le projet, avec une compréhension minimale de chaque étape effectuée.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-013",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Diagnostiquer un échec de déploiement",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Le déploiement de mon application a échoué avec ce message : {message d'erreur de la plateforme de déploiement}. Que dois-je vérifier en priorité ?",
+    "variables": [
+      "message d'erreur de la plateforme de déploiement"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une liste priorisée de vérifications (requirements.txt, chemin du fichier principal, fichier de données manquant) plutôt qu'un essai-erreur au hasard.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-014",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Choisir la bonne plateforme de déploiement gratuite",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "J'ai construit {type de projet, ex. un dashboard Streamlit / un site HTML statique}. Quelle plateforme de déploiement gratuite est la plus adaptée, et pourquoi en une phrase ?",
+    "variables": [
+      "type de projet, ex. un dashboard Streamlit / un site HTML statique"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une recommandation justifiée (Streamlit Community Cloud pour un dashboard Streamlit, Netlify/Vercel/GitHub Pages pour un site statique).",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-015",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Ajouter une charte graphique cohérente à une application Streamlit",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Applique cette palette de couleurs à mon dashboard Streamlit : {couleurs en hexadécimal}. Le fond doit être {couleur}, les encadrés d'indicateurs {couleur}, les accents {couleur}.",
+    "variables": [
+      "couleur",
+      "couleurs en hexadécimal"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un dashboard visuellement cohérent avec une identité de marque donnée, pas le thème par défaut de Streamlit.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-016",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Transformer une analyse de données en projet d'application",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Pour faire le pont entre un travail d'analyse déjà fait (Module 3) et un livrable applicatif (Module 4).",
+    "prompt_template": "J'ai déjà ces insights à partir de mes données : {liste des insights}. Construis un dashboard qui les met en évidence visuellement, pas juste qui affiche toutes les colonnes brutes.",
+    "variables": [
+      "liste des insights"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un dashboard organisé autour des messages clés de l'analyse, pas une simple visualisation exhaustive et non hiérarchisée.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-017",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Simplifier une page vitrine trop chargée",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Cette page vitrine contient trop d'informations à la fois. Identifie les 3 éléments essentiels que le visiteur doit retenir en 10 secondes, et réorganise la page autour d'eux.",
+    "variables": [],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une hiérarchie visuelle claire, avec les éléments secondaires déplacés plus bas dans la page plutôt que supprimés.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-018",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Rendre un dashboard lisible sur mobile",
+    "niveau": "Avancé",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Vérifie que ce dashboard reste lisible sur un écran de smartphone. Si certains éléments se chevauchent ou débordent, corrige la mise en page sans changer le contenu.",
+    "variables": [],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une disposition qui s'adapte à une largeur d'écran réduite, sans perte de contenu informationnel.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-019",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Documenter un projet pour qu'un tiers puisse le reprendre",
+    "niveau": "Avancé",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "Avant de partager un projet avec un collègue ou un client technique, ou avant de l'ajouter au Portfolio IA Professionnel.",
+    "prompt_template": "Ajoute un court commentaire en en-tête de ce fichier expliquant à quoi sert le projet, quelles données il utilise, et comment le lancer localement.",
+    "variables": [],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un fichier auto-documenté, compréhensible par quelqu'un qui n'a pas participé à sa création.",
+    "module_lie": 4
+  },
+  {
+    "id": "DEV-020",
+    "categorie": "Développement & solutions numériques",
+    "titre": "Décider si une tâche mérite une application ou reste un simple fichier",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Pour éviter de construire une application quand un simple document suffirait, ou l'inverse.",
+    "prompt_template": "Je dois livrer {description du besoin}. Est-ce que ça justifie de construire une application/un site, ou est-ce qu'un simple fichier partagé suffirait ? Justifie ta réponse.",
+    "variables": [
+      "description du besoin"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une décision motivée par l'usage réel (consultation répétée et à jour vs. lecture ponctuelle), pas par la technologie la plus impressionnante.",
+    "module_lie": 4
+  },
+  {
+    "id": "AUTO-001",
+    "categorie": "Automatisation & agents",
+    "titre": "Cartographier une tâche avec la grille fréquence × pénibilité × risque",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "En début de démarche, pour trancher si une tâche répétitive mérite une automatisation complète.",
+    "prompt_template": "Voici une tâche que je refais régulièrement : {description_tache}. Fréquence : {frequence}. Évalue-la sur trois critères — fréquence, pénibilité, risque d'erreur si un problème passait inaperçu — et dis-moi si c'est une bonne candidate à l'automatisation complète, à une simple Skill, ou à rien du tout pour l'instant.",
+    "variables": [
+      "description_tache",
+      "frequence"
+    ],
+    "exemple_rempli": "Voici une tâche que je refais régulièrement : rédiger la synthèse hebdomadaire de ventes et stock pour mon client DELTA Distribution. Fréquence : chaque semaine. Évalue-la sur trois critères...",
+    "resultat_attendu": "Une recommandation justifiée (automatiser / Skill / ne rien changer), pas une réponse générique.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-002",
+    "categorie": "Automatisation & agents",
+    "titre": "Décider entre une Skill et une automatisation complète",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Quand une tâche semble répétitive mais qu'on hésite sur le niveau d'automatisation adapté.",
+    "prompt_template": "Cette tâche demande-t-elle un jugement humain à chaque exécution, ou est-elle mécanique une fois les règles fixées ? Tâche : {description_tache}. Si un jugement est nécessaire, recommande une Skill ; sinon, recommande une automatisation complète et explique où placer le déclencheur.",
+    "variables": [
+      "description_tache"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une décision argumentée plutôt qu'un choix par défaut vers \"toujours tout automatiser\".",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-003",
+    "categorie": "Automatisation & agents",
+    "titre": "Rédiger la synthèse automatique d'une ligne de suivi (module Claude dans Make)",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude (via module Make)",
+    "contexte_usage": "Étape de traitement d'un scénario Make, entre un déclencheur de données et une action de distribution.",
+    "prompt_template": "Voici les données de la semaine du {semaine_debut} pour la région {region} de {client} : stock disponible {stock_disponible_unites} unités, seuil d'alerte {seuil_alerte_unites} unités, ventes de la semaine {ventes_semaine_fcfa} FCFA, commentaire terrain : {commentaire_terrain}. Rédige une synthèse factuelle en 2 phrases maximum, puis une recommandation courte en 1 phrase si le stock est sous le seuil d'alerte. N'invente aucun chiffre absent des données fournies.",
+    "variables": [
+      "client",
+      "commentaire_terrain",
+      "region",
+      "semaine_debut",
+      "seuil_alerte_unites",
+      "stock_disponible_unites",
+      "ventes_semaine_fcfa"
+    ],
+    "exemple_rempli": "Voici les données de la semaine du 2026-08-10 pour la région Nord de DELTA Distribution : stock disponible 340 unités, seuil d'alerte 300 unités, ventes de la semaine 4 900 000 FCFA, commentaire terrain : Léger retard camion. Rédige une synthèse factuelle...",
+    "resultat_attendu": "Un texte court, factuel, directement insérable dans une base Notion ou un message, sans relecture lourde.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-004",
+    "categorie": "Automatisation & agents",
+    "titre": "Générer le texte d'une alerte conditionnelle (WhatsApp/Notion)",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude (via module Make)",
+    "contexte_usage": "Pour la branche \"alerte\" d'un scénario, quand une condition précise est remplie.",
+    "prompt_template": "Rédige un message d'alerte court (3 lignes maximum, ton professionnel et direct) signalant que {condition_declenchee}, à partir de ces données : {donnees}. Le message doit se terminer par une question ou une action suggérée, pas juste un constat.",
+    "variables": [
+      "condition_declenchee",
+      "donnees"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un message d'alerte actionnable, pas un simple rapport de chiffres.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-005",
+    "categorie": "Automatisation & agents",
+    "titre": "Définir le mapping de champs entre un déclencheur et une action",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "Avant de configurer un module Make, pour clarifier quel champ source alimente quel champ destination.",
+    "prompt_template": "J'ai un déclencheur qui fournit ces champs : {liste_champs_source}. Je veux les envoyer vers {outil_destination} qui attend ces champs : {liste_champs_destination}. Propose-moi le mapping champ par champ, et signale les champs source qui n'ont pas d'équivalent évident côté destination.",
+    "variables": [
+      "liste_champs_destination",
+      "liste_champs_source",
+      "outil_destination"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un tableau de correspondance clair, avec les cas ambigus signalés avant la configuration réelle plutôt que découverts en cours de route.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-006",
+    "categorie": "Automatisation & agents",
+    "titre": "Choisir le bon déclencheur Make pour une tâche donnée",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Au moment de démarrer un nouveau scénario, avant de choisir le premier module.",
+    "prompt_template": "Je veux automatiser ceci : {description_tache}. Quel type de déclencheur Make est le plus adapté — nouvelle ligne dans une feuille, nouvel email reçu, heure programmée, ou webhook — et pourquoi ?",
+    "variables": [
+      "description_tache"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une recommandation de déclencheur justifiée par la nature de l'événement à surveiller, pas par défaut le plus connu.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-007",
+    "categorie": "Automatisation & agents",
+    "titre": "Trier et résumer les emails clients du jour",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude (via module Make connecté à Gmail)",
+    "contexte_usage": "Pour un scénario qui traite chaque email entrant d'une boîte professionnelle.",
+    "prompt_template": "Voici le contenu d'un email reçu : {contenu_email}. Résume-le en une phrase, classe-le dans une des catégories suivantes : {liste_categories}, et indique s'il nécessite une réponse urgente (oui/non) avec une justification courte.",
+    "variables": [
+      "contenu_email",
+      "liste_categories"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une classification exploitable directement par une étape suivante (ex. router vers Notion selon la catégorie).",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-008",
+    "categorie": "Automatisation & agents",
+    "titre": "Préparer un brouillon de réponse email à valider avant envoi",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude (via module Make)",
+    "contexte_usage": "Quand la relation client (garde-fou n° 3) exige une relecture humaine avant tout envoi.",
+    "prompt_template": "À partir de cet email reçu : {contenu_email}, rédige un brouillon de réponse professionnelle qui répond aux points soulevés, sans l'envoyer. Signale explicitement en fin de texte : 'Brouillon à valider avant envoi.'",
+    "variables": [
+      "contenu_email"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un brouillon prêt à relire, jamais envoyé automatiquement — le scénario s'arrête à la préparation, l'action d'envoi reste manuelle ou soumise à validation.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-009",
+    "categorie": "Automatisation & agents",
+    "titre": "Transformer un texte libre en entrée Notion structurée",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude (via module Make)",
+    "contexte_usage": "Quand la donnée source (email, note, message) n'est pas déjà organisée en colonnes.",
+    "prompt_template": "Voici un texte brut : {texte}. Extrais-en les champs suivants pour les insérer dans une base Notion : {liste_champs}. Si un champ est absent du texte, indique 'à préciser' plutôt que d'inventer une valeur.",
+    "variables": [
+      "liste_champs",
+      "texte"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Des champs structurés fiables, avec les absences signalées plutôt que masquées par une valeur inventée.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-010",
+    "categorie": "Automatisation & agents",
+    "titre": "Résumer une feuille Google Sheets pour un rapport périodique",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude (via module Make ou Claude Code)",
+    "contexte_usage": "Pour un rapport hebdomadaire ou mensuel agrégeant plusieurs lignes plutôt qu'une seule.",
+    "prompt_template": "Voici les données de la période {periode} : {donnees_agregees}. Rédige un résumé de 5 lignes maximum avec : le total, la tendance par rapport à la période précédente, et un point d'attention si une région ou une catégorie sort de la norme.",
+    "variables": [
+      "donnees_agregees",
+      "periode"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un résumé de niveau \"lecture de 30 secondes\", pas une reformulation exhaustive de chaque ligne.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-011",
+    "categorie": "Automatisation & agents",
+    "titre": "Détecter une anomalie dans une nouvelle ligne avant de déclencher une action",
+    "niveau": "Avancé",
+    "outil_recommande": "Claude (via module Make)",
+    "contexte_usage": "Filtre de sécurité avant une action automatique, pour éviter qu'une donnée aberrante ne déclenche une alerte absurde.",
+    "prompt_template": "Voici une nouvelle ligne de données : {donnees_ligne}. Compare-la aux valeurs habituelles suivantes : {valeurs_de_reference}. Signale si une valeur semble aberrante (ex. quantité négative, chiffre disproportionné) avant que je ne déclenche l'action suivante.",
+    "variables": [
+      "donnees_ligne",
+      "valeurs_de_reference"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une vérification de vraisemblance qui évite qu'une erreur de saisie humaine déclenche une alerte automatique incohérente.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-012",
+    "categorie": "Automatisation & agents",
+    "titre": "Traduire une règle en langage naturel vers une condition de filtre Make",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "Avant de configurer le filtre d'un routeur, pour être certain que la logique est correcte avant de la coder dans l'interface.",
+    "prompt_template": "Je veux que cette branche du scénario s'exécute uniquement quand : {regle_en_francais}. Formule cette règle sous forme de condition logique claire (ET / OU / seuils précis) que je peux reproduire dans un filtre Make.",
+    "variables": [
+      "regle_en_francais"
+    ],
+    "exemple_rempli": "Je veux que cette branche du scénario s'exécute uniquement quand : la région est Nord et le stock est descendu sous le seuil d'alerte. Formule cette règle sous forme de condition logique...",
+    "resultat_attendu": "Une condition explicite (ex. `region = Nord ET stock_disponible_unites < seuil_alerte_unites`), sans ambiguïté au moment de la configurer.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-013",
+    "categorie": "Automatisation & agents",
+    "titre": "Construire une checklist de test avant d'activer un scénario",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Juste avant de basculer un scénario Make sur \"ON\".",
+    "prompt_template": "Voici mon scénario : {description_scenario}. Donne-moi une checklist de tests à effectuer manuellement avant de l'activer, en incluant au moins un cas qui doit déclencher l'action et un cas qui ne doit pas la déclencher.",
+    "variables": [
+      "description_scenario"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une liste de vérifications concrètes, pas un conseil générique de \"tester avant de déployer\".",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-014",
+    "categorie": "Automatisation & agents",
+    "titre": "Diagnostiquer un scénario Make qui échoue",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "Quand une exécution Make renvoie une erreur incomprise.",
+    "prompt_template": "Mon scénario Make échoue à cette étape : {nom_module}, avec ce message d'erreur : {message_erreur}. Voici ce que le module précédent envoie : {donnees_entrantes}. Que dois-je vérifier en priorité ?",
+    "variables": [
+      "donnees_entrantes",
+      "message_erreur",
+      "nom_module"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un diagnostic pas-à-pas qui évite de recommencer le scénario de zéro par frustration.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-015",
+    "categorie": "Automatisation & agents",
+    "titre": "Évaluer si une automatisation manipule une donnée personnelle sensible",
+    "niveau": "Avancé",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "En phase de conception d'un scénario, avant de connecter un outil qui transmet des informations personnelles.",
+    "prompt_template": "Mon scénario transmet ces données entre ces outils : {description_flux_donnees}. Certaines concernent-elles des informations personnelles sensibles ? Si oui, recommande les précautions minimales avant de mettre ce scénario en production.",
+    "variables": [
+      "description_flux_donnees"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une évaluation de risque avant l'activation, pas après un incident.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-016",
+    "categorie": "Automatisation & agents",
+    "titre": "Rédiger un message WhatsApp Business professionnel et court",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude (via module Make)",
+    "contexte_usage": "Pour toute notification envoyée par WhatsApp dans un scénario, qui doit rester lisible sur mobile en quelques secondes.",
+    "prompt_template": "Rédige un message WhatsApp professionnel de 3 lignes maximum à partir de ces informations : {donnees}. Le ton doit rester direct et factuel, sans formule de politesse superflue — c'est une notification, pas un email.",
+    "variables": [
+      "donnees"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un message lisible d'un coup d'œil sur téléphone, sans superflu.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-017",
+    "categorie": "Automatisation & agents",
+    "titre": "Prioriser plusieurs candidates à l'automatisation en une seule liste",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Après avoir rempli sa grille de cartographie sur plusieurs tâches, pour décider par laquelle commencer.",
+    "prompt_template": "Voici mes tâches candidates avec leur fréquence, pénibilité et risque : {liste_taches_notees}. Classe-les par ordre de priorité pour une première automatisation, en expliquant pourquoi la première du classement est la plus rentable à court terme.",
+    "variables": [
+      "liste_taches_notees"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un ordre de priorité argumenté, qui évite de se disperser sur plusieurs scénarios à la fois en début d'apprentissage.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-018",
+    "categorie": "Automatisation & agents",
+    "titre": "Documenter un scénario pour qu'un collègue puisse le reprendre",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "Une fois le scénario stabilisé, pour ne pas rester seul détenteur de sa logique.",
+    "prompt_template": "Voici la structure de mon scénario Make : {description_modules_et_conditions}. Rédige une documentation courte (1 page) qu'un collègue non technique pourrait lire pour comprendre ce que fait le scénario, sans avoir besoin d'ouvrir Make.",
+    "variables": [
+      "description_modules_et_conditions"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une documentation lisible par un non-technicien, cohérente avec la règle de production \"zéro dépendance à une seule personne\".",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-019",
+    "categorie": "Automatisation & agents",
+    "titre": "Simuler un cas limite pour vérifier la robustesse d'une condition d'alerte",
+    "niveau": "Avancé",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Avant activation, pour chercher les cas que le filtre pourrait mal gérer (valeur exactement au seuil, champ vide, etc.).",
+    "prompt_template": "Voici ma condition de déclenchement : {condition}. Liste-moi 5 cas limites (valeurs exactement au seuil, champ manquant, valeur négative, doublon) qui pourraient la faire échouer ou se déclencher à tort, pour que je les teste avant d'activer le scénario.",
+    "variables": [
+      "condition"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une liste de cas de test que l'on n'aurait pas pensé à essayer spontanément.",
+    "module_lie": 5
+  },
+  {
+    "id": "AUTO-020",
+    "categorie": "Automatisation & agents",
+    "titre": "Décider où arrêter l'automatisation et garder une étape manuelle",
+    "niveau": "Avancé",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Question de conception à se poser systématiquement avant d'automatiser une chaîne jusqu'au bout, y compris l'action finale vers un tiers externe.",
+    "prompt_template": "Mon scénario va jusqu'à {derniere_action_prevue}. Est-ce que cette dernière étape devrait rester manuelle (validation humaine) plutôt qu'automatique, compte tenu de {contexte_sensibilite} ? Justifie ta recommandation.",
+    "variables": [
+      "contexte_sensibilite",
+      "derniere_action_prevue"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une décision explicite sur la limite de l'automatisation, cohérente avec les garde-fous de la Partie 4 de la leçon écrite (décisions sensibles, données personnelles, relation client).",
+    "module_lie": 5
+  },
+  {
+    "id": "CARR-001",
+    "categorie": "Carrière & monétisation",
+    "titre": "Rédiger la page Avant/Après de son portfolio",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai ou Claude Code",
+    "contexte_usage": "Pour ouvrir son Portfolio IA Professionnel avec une accroche factuelle, sans formule marketing vide.",
+    "prompt_template": "Voici ma situation avant cette formation : {situation_avant}. Voici ce qui a concrètement changé : {ce_qui_a_change}. Rédige une page 'Avant/Après' en 2 phrases maximum, factuelle, sans superlatif marketing.",
+    "variables": [
+      "ce_qui_a_change",
+      "situation_avant"
+    ],
+    "exemple_rempli": "Voici ma situation avant cette formation : j'utilisais Claude.ai pour tout, y compris copier-coller des colonnes Excel à la main. Voici ce qui a concrètement changé : j'ai un dashboard déployé, une automatisation active et une bibliothèque de prompts que je réutilise chaque semaine. Rédige une page 'Avant/Après' en 2 phrases maximum, factuelle, sans superlatif marketing.",
+    "resultat_attendu": "Une accroche courte et crédible, réutilisable en tête de portfolio et sur LinkedIn.",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-002",
+    "categorie": "Carrière & monétisation",
+    "titre": "Assembler ses livrables en portfolio cohérent",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Voici mes {nombre_livrables} livrables : {description_courte_de_chaque_livrable}. Aide-moi à les organiser en une page de portfolio cohérente, avec un titre court et percutant pour chaque section.",
+    "variables": [
+      "description_courte_de_chaque_livrable",
+      "nombre_livrables"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une structure de portfolio prête à mettre en forme (Notion ou PDF), sans avoir à réfléchir seul à l'ordre ou aux titres.",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-003",
+    "categorie": "Carrière & monétisation",
+    "titre": "Transformer une compétence technique en offre orientée résultat",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Pour sortir du langage \"je fais de l'IA\" et formuler une offre vendable.",
+    "prompt_template": "Voici ce que je sais faire techniquement : {competence}. Reformule ça en une offre de service orientée résultat métier, sans jargon technique, en une phrase que comprendrait un client qui ne connaît rien à l'IA.",
+    "variables": [
+      "competence"
+    ],
+    "exemple_rempli": "Voici ce que je sais faire techniquement : automatiser la génération d'un rapport de ventes via Make et Claude. Reformule ça en une offre de service orientée résultat métier, sans jargon technique, en une phrase que comprendrait un client qui ne connaît rien à l'IA.",
+    "resultat_attendu": "Une phrase d'offre du type \"J'automatise votre reporting mensuel pour qu'il soit prêt sans que vous y touchiez\".",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-004",
+    "categorie": "Carrière & monétisation",
+    "titre": "Rédiger un pitch en 1 page (interne ou client)",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code ou Claude.ai",
+    "contexte_usage": "Pour proposer un projet pilote IA à un employeur, ou une nouvelle offre à un client existant.",
+    "prompt_template": "Aide-moi à rédiger un pitch d'une page pour proposer {projet}. Structure exacte : 1) Problème (avec un chiffre) 2) Solution Claude (sans jargon) 3) Gain chiffré (temps ou argent) 4) Prochaine étape (une action datée). Contexte : {contexte_detaille}.",
+    "variables": [
+      "contexte_detaille",
+      "projet"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un pitch structuré en 4 blocs, avec un chiffre concret dans chaque section clé, prêt à envoyer.",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-005",
+    "categorie": "Carrière & monétisation",
+    "titre": "Chiffrer le gain d'une automatisation ou d'un projet IA",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Quand la section \"gain chiffré\" d'un pitch reste vague.",
+    "prompt_template": "Voici ma tâche avant automatisation : {description_avant} (fréquence : {frequence}, temps par occurrence : {temps}). Aide-moi à calculer le gain annuel en heures, puis à le formuler en une phrase convaincante pour un décideur non technique.",
+    "variables": [
+      "description_avant",
+      "frequence",
+      "temps"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un calcul simple (fréquence × temps × 52 semaines) transformé en argument chiffré crédible.",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-006",
+    "categorie": "Carrière & monétisation",
+    "titre": "Rédiger un post LinkedIn \"retour d'expérience\"",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "",
+    "prompt_template": "Rédige un post LinkedIn de format 'retour d'expérience' sur mon apprentissage de Claude en formation. Situation avant : {situation_avant}. Ce qui a changé : {ce_qui_a_change}. Ton direct et professionnel, pas de superlatifs, maximum 150 mots, 2-3 hashtags pertinents à la fin.",
+    "variables": [
+      "ce_qui_a_change",
+      "situation_avant"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un post prêt à relire et publier, orienté crédibilité plutôt qu'autopromotion.",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-007",
+    "categorie": "Carrière & monétisation",
+    "titre": "Rédiger un post LinkedIn \"étude de cas anonymisée\"",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Pour montrer un résultat client sans exposer d'informations confidentielles.",
+    "prompt_template": "Rédige un post LinkedIn 'étude de cas anonymisée' à partir de ce projet : {description_projet_anonymise}. N'utilise aucun nom réel de client ni de chiffre d'affaires exact. Termine par un résultat mesurable et 2-3 hashtags.",
+    "variables": [
+      "description_projet_anonymise"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une preuve de compétence publiable sans risque de confidentialité.",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-008",
+    "categorie": "Carrière & monétisation",
+    "titre": "Rédiger un post LinkedIn \"avant/après\"",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "",
+    "prompt_template": "Rédige un post LinkedIn de format 'Avant/Après' : Avant, je faisais {liste_taches_avant}. Après, je fais {liste_taches_apres}. Style visuel avec deux blocs clairement séparés, ton direct, maximum 150 mots.",
+    "variables": [
+      "liste_taches_apres",
+      "liste_taches_avant"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un post à fort impact visuel, facile à lire même en scrollant vite.",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-009",
+    "categorie": "Carrière & monétisation",
+    "titre": "Rédiger un post LinkedIn \"contenu éducatif\"",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "",
+    "prompt_template": "Rédige un post LinkedIn éducatif sur ce sujet : {sujet_metier}. Structure : une liste de 3 signes/critères concrets, puis une phrase personnelle sur comment je l'ai appliqué moi-même, avec un chiffre si possible. Pas de ton professoral, ton de pair à pair.",
+    "variables": [
+      "sujet_metier"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un post qui construit l'autorité sans paraître donneur de leçons.",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-010",
+    "categorie": "Carrière & monétisation",
+    "titre": "Fixer un prix pour une offre de service",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Quand l'ancrage tarifaire bloque le lancement d'une offre.",
+    "prompt_template": "Je veux vendre cette offre : {description_offre}, sur le marché {marche_geographique}. Voici le temps que ça me prend : {temps_estime}. Propose-moi une fourchette de prix réaliste en FCFA et en USD, avec une justification en une phrase.",
+    "variables": [
+      "description_offre",
+      "marche_geographique",
+      "temps_estime"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une fourchette tarifaire argumentée, pas juste un chiffre au hasard.",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-011",
+    "categorie": "Carrière & monétisation",
+    "titre": "Transformer un savoir-faire en produit digital",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Voici un savoir-faire que je maîtrise bien : {savoir_faire}. Propose-moi 3 formats de produit digital réalistes que je pourrais construire à partir de ça en moins de 2 semaines, avec pour chacun un prix indicatif et une plateforme de vente adaptée.",
+    "variables": [
+      "savoir_faire"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une liste courte et priorisée d'options concrètes, pas une liste générique de tous les formats possibles.",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-012",
+    "categorie": "Carrière & monétisation",
+    "titre": "Se positionner dans la grille de décision (salariat/freelance/produit)",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "",
+    "prompt_template": "Voici ma situation : temps disponible par semaine {temps_disponible}, tolérance au risque financier {tolerance_risque}, besoin de revenu immédiat {besoin_revenu}. Entre salariat augmenté, freelance et produit digital, quelle voie recommandes-tu en priorité pour les 90 prochains jours, et pourquoi ?",
+    "variables": [
+      "besoin_revenu",
+      "temps_disponible",
+      "tolerance_risque"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une recommandation argumentée à partir de la situation réelle, pas une réponse générique.",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-013",
+    "categorie": "Carrière & monétisation",
+    "titre": "Formuler sa stratégie de valorisation à 90 jours",
+    "niveau": "Intermédiaire",
+    "outil_recommande": "Claude Code",
+    "contexte_usage": "",
+    "prompt_template": "Aide-moi à formuler ma stratégie de valorisation à 90 jours à partir de ce positionnement : {positionnement_choisi}. Structure : positionnement en 1 phrase, 3 actions datées sous 2 semaines, jalons à 30/60/90 jours.",
+    "variables": [
+      "positionnement_choisi"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un document d'une page, daté et vérifiable, prêt à devenir la Section 6 du Portfolio IA Professionnel.",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-014",
+    "categorie": "Carrière & monétisation",
+    "titre": "Préparer une prospection sur une plateforme freelance",
+    "niveau": "Débutant",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Pour rédiger un profil ou un premier message de prospection sur Malt, Comet, Upwork ou Fiverr.",
+    "prompt_template": "Aide-moi à rédiger la description de mon profil freelance pour {plateforme}, à partir de cette offre : {description_offre}. Maximum 100 mots, oriente sur le résultat client, pas sur les outils techniques utilisés.",
+    "variables": [
+      "description_offre",
+      "plateforme"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Un texte de profil prêt à publier, cohérent avec le positionnement orienté résultat du module.",
+    "module_lie": 6
+  },
+  {
+    "id": "CARR-015",
+    "categorie": "Carrière & monétisation",
+    "titre": "Vérifier qu'une offre ou un pitch n'utilise pas de jargon technique",
+    "niveau": "Avancé",
+    "outil_recommande": "Claude.ai",
+    "contexte_usage": "Contrôle qualité avant publication ou envoi d'un pitch/offre à un client ou un employeur.",
+    "prompt_template": "Relis ce texte : {texte}. Identifie chaque mot ou expression qui suppose une connaissance technique de l'IA, et propose une reformulation 100 % métier pour chacun, compréhensible par quelqu'un qui n'a jamais utilisé Claude.",
+    "variables": [
+      "texte"
+    ],
+    "exemple_rempli": "",
+    "resultat_attendu": "Une liste des termes à remplacer, avec une alternative concrète pour chacun — un filtre qualité avant tout envoi public.",
+    "module_lie": 6
+  }
+]

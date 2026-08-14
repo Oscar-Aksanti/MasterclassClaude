@@ -1,0 +1,95 @@
+{
+  "_avertissement": "STRUCTURE PÉDAGOGIQUE — PAS UN BLUEPRINT MAKE IMPORTABLE. Ce fichier documente, dans un format inspiré des blueprints Make (Integromat), l'architecture du scénario de référence du Module 5 (déclencheur, étapes, mapping des champs, condition d'alerte). Il n'a jamais été exporté depuis un compte Make réel et ne contient aucun identifiant de connexion valide (connectionId, webhookId, etc.) — il n'est donc PAS garanti importable tel quel via 'Importer un blueprint' dans Make. Utilisez-le comme plan de construction à recréer manuellement, module par module, dans l'interface Make, en suivant 04-lecon-ecrite-complete.md (Partie 3) et 05-demo-commentee.md. Voir aussi le fichier d'accompagnement blueprint-scenario-delta-reporting-README.md.",
+  "nom_scenario": "Rapport hebdo automatique DELTA Distribution — avec alerte région Nord",
+  "module_lie": 5,
+  "persona": "Fatou Diallo, consultante indépendante, Dakar — cliente fil rouge : DELTA Distribution",
+  "probleme_metier_resolu": "La rupture de stock récurrente sur la région Nord (identifiée dès le Module 1, quantifiée au Module 3) n'était surveillée que manuellement par Fatou. Ce scénario surveille la feuille de suivi hebdomadaire et alerte automatiquement Fatou dès que la condition de risque est réunie, sans jamais notifier ou agir directement auprès du client final DELTA.",
+  "declencheur": {
+    "app": "Google Sheets",
+    "module": "Watch Rows",
+    "description": "Se déclenche dès qu'une nouvelle ligne est ajoutée en bas de la feuille de suivi.",
+    "feuille_source": "Suivi hebdo DELTA",
+    "colonnes_attendues": [
+      { "nom": "semaine_debut", "type": "date", "exemple": "2026-08-17" },
+      { "nom": "region", "type": "texte", "exemple": "Nord", "valeurs_possibles": ["Dakar", "Thiès", "Nord", "Sud", "Casamance"] },
+      { "nom": "stock_disponible_unites", "type": "nombre", "exemple": 340 },
+      { "nom": "seuil_alerte_unites", "type": "nombre", "exemple": 300 },
+      { "nom": "ventes_semaine_fcfa", "type": "nombre", "exemple": 4900000 },
+      { "nom": "commentaire_terrain", "type": "texte", "exemple": "Léger retard camion, partenaire transport" }
+    ]
+  },
+  "etapes": [
+    {
+      "ordre": 1,
+      "id_etape": "claude_synthese",
+      "app": "Anthropic Claude (module Make natif, ou module HTTP générique vers l'API Claude si indisponible sur le compte)",
+      "module": "Create a Message",
+      "role": "Traitement — génère la synthèse factuelle et la recommandation à partir de la ligne captée par le déclencheur.",
+      "entrees_mappees": {
+        "semaine_debut": "{{1.semaine_debut}}",
+        "region": "{{1.region}}",
+        "stock_disponible_unites": "{{1.stock_disponible_unites}}",
+        "seuil_alerte_unites": "{{1.seuil_alerte_unites}}",
+        "ventes_semaine_fcfa": "{{1.ventes_semaine_fcfa}}",
+        "commentaire_terrain": "{{1.commentaire_terrain}}"
+      },
+      "prompt_template": "Voici les données de la semaine du {{semaine_debut}} pour la région {{region}} de DELTA Distribution : stock disponible {{stock_disponible_unites}} unités, seuil d'alerte {{seuil_alerte_unites}} unités, ventes de la semaine {{ventes_semaine_fcfa}} FCFA, commentaire terrain : {{commentaire_terrain}}. Rédige une synthèse factuelle en 2 phrases maximum, puis une recommandation courte en 1 phrase si le stock est sous le seuil d'alerte. N'invente aucun chiffre absent des données fournies.",
+      "sortie": "texte_synthese (champ libre réutilisé dans les étapes suivantes)"
+    },
+    {
+      "ordre": 2,
+      "id_etape": "routeur",
+      "app": "Make — Router",
+      "module": "Router",
+      "role": "Sépare le flux en deux branches indépendantes après la génération de la synthèse.",
+      "branches": [
+        {
+          "nom_branche": "A — Archivage systématique",
+          "condition_filtre": "aucune (s'exécute à chaque passage)"
+        },
+        {
+          "nom_branche": "B — Alerte région Nord",
+          "condition_filtre": "region = \"Nord\" ET stock_disponible_unites < seuil_alerte_unites",
+          "note": "Condition à double critère — seule la combinaison région Nord + stock sous le seuil déclenche l'alerte, pas la région seule ni le seuil seul."
+        }
+      ]
+    },
+    {
+      "ordre": 3,
+      "id_etape": "notion_archivage",
+      "branche": "A",
+      "app": "Notion",
+      "module": "Create a Database Item",
+      "role": "Action — archive systématiquement le rapport de la semaine, quel que soit le niveau de stock.",
+      "base_notion": "Rapports hebdo DELTA",
+      "mapping_champs": {
+        "Semaine": "{{1.semaine_debut}}",
+        "Région": "{{1.region}}",
+        "Ventes": "{{1.ventes_semaine_fcfa}}",
+        "Stock": "{{1.stock_disponible_unites}}",
+        "Synthèse": "{{claude_synthese.texte_synthese}}",
+        "Statut": "Nouveau"
+      }
+    },
+    {
+      "ordre": 4,
+      "id_etape": "whatsapp_alerte",
+      "branche": "B",
+      "app": "WhatsApp Business",
+      "module": "Send a Message",
+      "role": "Action conditionnelle — notifie Fatou (jamais DELTA directement) uniquement si la condition de la branche B est remplie.",
+      "destinataire": "Fatou Diallo (numéro professionnel de la consultante, pas un contact DELTA)",
+      "message_template": "Alerte DELTA — région Nord : stock à {{1.stock_disponible_unites}} unités, sous le seuil de {{1.seuil_alerte_unites}}. {{claude_synthese.texte_synthese}}. Semaine du {{1.semaine_debut}}."
+    }
+  ],
+  "tests_obligatoires_avant_activation": [
+    "Exécution manuelle (Run once) avec une ligne région=Nord et stock sous le seuil : vérifier que le message WhatsApp part ET que l'entrée Notion est créée.",
+    "Exécution manuelle avec une ligne région=Dakar (ou toute région autre que Nord) : vérifier que SEULE l'entrée Notion est créée, sans message WhatsApp.",
+    "Exécution manuelle avec une ligne région=Nord mais stock au-dessus du seuil : vérifier qu'aucune alerte ne part malgré la région à risque."
+  ],
+  "garde_fous_appliques": [
+    "Le scénario ne notifie jamais DELTA directement — seulement Fatou, qui reste le point de passage humain avant toute communication externe.",
+    "Le scénario ne déclenche aucune action irréversible (aucune commande fournisseur, aucune modification tarifaire) — il prépare et alerte, un humain décide de la suite.",
+    "Aucune donnée personnelle individuelle n'est transmise dans ce scénario — uniquement des données agrégées de ventes et de stock par région."
+  ]
+}

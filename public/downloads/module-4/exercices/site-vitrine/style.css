@@ -1,0 +1,336 @@
+/* ============================================================
+   Fatou Diallo — Conseil augmenté à l'IA
+   Charte graphique : 00-marque-et-design/charte-graphique.md
+   ============================================================ */
+
+:root {
+  --bg-cream: #FDF3F0;
+  --ink: #1A1323;
+  --violet: #7530AA;
+  --indigo: #691FD2;
+  --corail: #E06840;
+  --white: #FFFFFF;
+  --gradient-brand: linear-gradient(90deg, #7530AA 0%, #691FD2 100%);
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-pill: 999px;
+  --font-titres: 'Baloo 2', 'Poppins', sans-serif;
+  --font-corps: 'Poppins', 'Inter', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-corps);
+  background-color: var(--bg-cream);
+  color: var(--ink);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-titres);
+  font-weight: 800;
+}
+
+a { text-decoration: none; }
+
+/* ---------- Grille filigrane (signature visuelle) ---------- */
+.grille-filigrane {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(26,19,35,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26,19,35,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+/* ---------- En-tête ---------- */
+.entete {
+  position: relative;
+  background-color: var(--bg-cream);
+  padding: 24px 6vw 72px;
+  overflow: hidden;
+}
+
+.nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto 56px;
+}
+
+.nav-logo {
+  font-family: var(--font-titres);
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.nav-cta {
+  background: var(--violet);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.entete-contenu {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.badge-pill {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--white);
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
+.titre-degrade {
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.sous-titre {
+  font-size: 1.15rem;
+  color: var(--ink);
+  opacity: 0.85;
+  margin-bottom: 32px;
+}
+
+.entete-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bouton-principal {
+  background: var(--gradient-brand);
+  color: var(--white);
+  padding: 14px 28px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+}
+
+.bouton-secondaire {
+  background: var(--white);
+  color: var(--violet);
+  border: 2px solid var(--violet);
+  padding: 12px 26px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+}
+
+/* ---------- Bande de preuve ---------- */
+.bande-preuve {
+  background: var(--ink);
+  color: var(--white);
+  text-align: center;
+  padding: 16px 6vw;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.puce-corail {
+  color: var(--corail);
+  font-weight: 900;
+}
+
+/* ---------- Sections génériques ---------- */
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 72px 6vw;
+}
+
+.section h2 {
+  font-size: clamp(1.7rem, 4vw, 2.3rem);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.texte-intro {
+  max-width: 640px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 1.05rem;
+  opacity: 0.85;
+}
+
+.texte-clair { color: var(--white); opacity: 0.9; }
+
+.section-sombre {
+  background: var(--ink);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 64px 6vw;
+}
+
+.section-sombre h2 { color: var(--white); }
+
+/* ---------- Cartes ---------- */
+.grille-cartes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.carte {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(26,19,35,0.06);
+}
+
+.carte-icone { font-size: 1.8rem; margin-bottom: 12px; }
+
+.carte h3 { font-size: 1.1rem; margin-bottom: 10px; }
+
+.carte p { font-size: 0.92rem; opacity: 0.8; }
+
+/* ---------- Grille offre ---------- */
+.grille-offre {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.bloc-offre {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+
+.bloc-offre h3 {
+  color: var(--corail);
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.bloc-offre p { font-size: 0.92rem; opacity: 0.9; }
+
+/* ---------- Encadré sombre / citation ---------- */
+.encadre-sombre {
+  background: var(--ink);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+.citation-auteur {
+  margin-top: 16px;
+  color: var(--corail);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* ---------- Badge prix ---------- */
+.badge-prix {
+  max-width: 360px;
+  margin: 0 auto;
+  background: var(--corail);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.prix-barre {
+  text-decoration: line-through;
+  opacity: 0.75;
+  font-size: 0.95rem;
+}
+
+.prix-final {
+  font-family: var(--font-titres);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.prix-detail { font-size: 0.85rem; opacity: 0.9; }
+
+/* ---------- Bandeau CTA pleine largeur ---------- */
+.bandeau-cta {
+  background: var(--gradient-brand);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 6vw;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.bandeau-cta-icone {
+  background: var(--white);
+  color: var(--violet);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.bandeau-cta-texte { display: flex; flex-direction: column; }
+.bandeau-cta-texte strong { font-size: 1.1rem; }
+.bandeau-cta-texte span { font-size: 0.9rem; opacity: 0.9; }
+
+.bouton-cta-blanc {
+  background: var(--white);
+  color: var(--violet);
+  padding: 12px 26px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+}
+
+/* ---------- Pied de page ---------- */
+.pied-de-page {
+  text-align: center;
+  padding: 32px 6vw 48px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.pied-mention { margin-top: 6px; font-size: 0.78rem; opacity: 0.6; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .grille-cartes, .grille-offre {
+    grid-template-columns: 1fr;
+  }
+  .nav { margin-bottom: 40px; }
+}
