@@ -10,7 +10,7 @@
 | **Skill personnelle** | Aucune Skill créée | Une Skill créée à partir d'un exemple générique | Une Skill créée à partir d'UNE tâche réellement répétitive de votre métier, testée sur un exemple réel |
 | **Connecteur MCP** | Non connecté | Connecté mais jamais testé | Connecté ET testé avec une information réellement récupérée depuis l'outil (pas déjà connue de Claude) |
 | **Fichier de mémoire personnelle** | Inexistant | Créé mais générique (pas rempli avec vos vraies informations) | Créé et rempli avec vos vrais clients/projets/préférences |
-| **Compréhension de l'arbre de décision** | Ne sait pas justifier le choix d'un outil | Sait citer les 4 outils | Peut justifier en une phrase le choix d'outil pour une tâche donnée non vue en formation (voir quiz) |
+| **Compréhension de l'arbre de décision** | Ne sait pas justifier le choix d'un outil | Sait citer les 5 outils | Peut justifier en une phrase le choix d'outil pour une tâche donnée non vue en formation (voir quiz) |
 
 ## Seuil de complétion du module
 

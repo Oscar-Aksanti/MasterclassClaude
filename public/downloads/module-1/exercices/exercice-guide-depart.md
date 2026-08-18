@@ -4,7 +4,7 @@
 
 ## Partie A — Associez chaque tâche au bon outil Claude
 
-Pour chacune des 5 tâches ci-dessous, indiquez l'outil que vous utiliseriez (Claude.ai / Claude Code / Claude Cowork / Claude in Chrome) et justifiez en une phrase. Ces tâches sont inspirées du quotidien de Fatou — adaptez mentalement à votre propre métier si besoin.
+Pour chacune des 6 tâches ci-dessous, indiquez l'outil que vous utiliseriez (Claude.ai / Claude Code / Claude Cowork / Claude in Chrome / Claude Design) et justifiez en une phrase. Ces tâches sont inspirées du quotidien de Fatou — adaptez mentalement à votre propre métier si besoin.
 
 | # | Tâche | Outil choisi | Justification (1 phrase) |
 |---|---|---|---|
@@ -13,6 +13,7 @@ Pour chacune des 5 tâches ci-dessous, indiquez l'outil que vous utiliseriez (Cl
 | 3 | Construire un tableau de bord web pour visualiser les ventes d'un client | | |
 | 4 | Rechercher les tarifs pratiqués par 5 consultants concurrents sur leurs sites web respectifs | | |
 | 5 | Suivre un projet client sur plusieurs semaines, avec des tâches, des échéances et des rappels | | |
+| 6 | Créer la maquette d'une landing page pour présenter sa nouvelle offre de conseil à des prospects | | |
 
 ## Partie B — Votre checklist d'environnement (à cocher au fur et à mesure)
 

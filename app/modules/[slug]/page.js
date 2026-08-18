@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MODULES, getModule, getAdjacentModules, HORAIRE, formaterDateModule } from "@/lib/modules";
 import { readContentFile } from "@/lib/content";
-import { listDownloads } from "@/lib/downloads";
+import { listDownloads, fileExistsInPublic } from "@/lib/downloads";
 import ModuleStatusBadge from "@/components/ModuleStatusBadge";
 import Markdown from "@/components/Markdown";
 import DownloadList from "@/components/DownloadList";
@@ -34,6 +34,8 @@ export default async function ModuleDetailPage({ params }) {
   const ressources = listDownloads(`${slug}/ressources`);
   const slidesPdf = `/downloads/${slug}/03-support-slides.pdf`;
   const slidesPptx = `/downloads/${slug}/03-support-slides.pptx`;
+  const slidesPdfExists = fileExistsInPublic(slidesPdf);
+  const slidesPptxExists = fileExistsInPublic(slidesPptx);
 
   const { prev, next } = getAdjacentModules(slug);
 
@@ -63,26 +65,36 @@ export default async function ModuleDetailPage({ params }) {
       {/* Bloc présentation : slides */}
       <section className="mb-10">
         <h2 className="font-titres mb-3 text-xl font-bold text-ink">Support de présentation</h2>
-        <iframe
-          src={slidesPdf}
-          title={`Slides du module ${mod.n}`}
-          className="h-[600px] w-full rounded-2xl border border-ink/10 bg-white"
-        />
+        {slidesPdfExists ? (
+          <iframe
+            src={slidesPdf}
+            title={`Slides du module ${mod.n}`}
+            className="h-[600px] w-full rounded-2xl border border-ink/10 bg-white"
+          />
+        ) : (
+          <p className="rounded-2xl border border-ink/10 bg-white px-4 py-6 text-sm text-ink/50">
+            Slides indisponibles pour le moment.
+          </p>
+        )}
         <div className="mt-3 flex flex-wrap gap-3">
-          <a
-            href={slidesPptx}
-            download
-            className="rounded-full bg-violet px-5 py-2.5 text-sm font-bold text-white transition hover:opacity-90"
-          >
-            Télécharger .pptx
-          </a>
-          <a
-            href={slidesPdf}
-            download
-            className="rounded-full border border-ink/15 bg-white px-5 py-2.5 text-sm font-bold text-ink transition hover:border-corail hover:text-corail"
-          >
-            Télécharger .pdf
-          </a>
+          {slidesPptxExists && (
+            <a
+              href={slidesPptx}
+              download
+              className="rounded-full bg-violet px-5 py-2.5 text-sm font-bold text-white transition hover:opacity-90"
+            >
+              Télécharger .pptx
+            </a>
+          )}
+          {slidesPdfExists && (
+            <a
+              href={slidesPdf}
+              download
+              className="rounded-full border border-ink/15 bg-white px-5 py-2.5 text-sm font-bold text-ink transition hover:border-corail hover:text-corail"
+            >
+              Télécharger .pdf
+            </a>
+          )}
         </div>
       </section>
 

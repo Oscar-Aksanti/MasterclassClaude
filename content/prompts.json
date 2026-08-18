@@ -6,11 +6,11 @@
     "niveau": "Débutant",
     "outil_recommande": "Claude.ai",
     "contexte_usage": "Quand vous hésitez entre plusieurs outils Claude pour une tâche précise.",
-    "prompt_template": "Voici une tâche que je dois faire : {description_tache}. Parmi Claude.ai (chat), Claude Code, Claude Cowork et Claude in Chrome, lequel est le plus adapté, et pourquoi en une phrase ?",
+    "prompt_template": "Voici une tâche que je dois faire : {description_tache}. Parmi Claude.ai (chat), Claude Code, Claude Cowork, Claude in Chrome et Claude Design, lequel est le plus adapté, et pourquoi en une phrase ?",
     "variables": [
       "description_tache"
     ],
-    "exemple_rempli": "Voici une tâche que je dois faire : comparer les tarifs de 5 concurrents sur leurs sites web. Parmi Claude.ai (chat), Claude Code, Claude Cowork et Claude in Chrome, lequel est le plus adapté, et pourquoi en une phrase ?",
+    "exemple_rempli": "Voici une tâche que je dois faire : comparer les tarifs de 5 concurrents sur leurs sites web. Parmi Claude.ai (chat), Claude Code, Claude Cowork, Claude in Chrome et Claude Design, lequel est le plus adapté, et pourquoi en une phrase ?",
     "resultat_attendu": "Une recommandation d'outil justifiée en une phrase, sans avoir à connaître l'arbre de décision par cœur.",
     "module_lie": 1
   },

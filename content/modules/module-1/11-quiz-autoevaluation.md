@@ -1,6 +1,6 @@
 # Quiz d'autoévaluation — Module 1
 
-7 questions. Objectif : 6/7 minimum avant de passer au Module 2. Ce n'est pas un examen — si vous ratez une question, relisez la partie correspondante de `04-lecon-ecrite-complete.md` avant de continuer.
+8 questions. Objectif : 7/8 minimum avant de passer au Module 2. Ce n'est pas un examen — si vous ratez une question, relisez la partie correspondante de `04-lecon-ecrite-complete.md` avant de continuer.
 
 ---
 
@@ -43,6 +43,12 @@
 - C) Claude Cowork
 - D) Aucun outil Claude ne fait ça
 
+**8.** Vous devez présenter à un client la maquette visuelle d'une landing page, avant même de la rendre fonctionnelle. Quel outil est le plus adapté ?
+- A) Claude in Chrome
+- B) Claude Code
+- C) Claude Design
+- D) Claude.ai
+
 ---
 
 ## Corrigé
@@ -54,5 +60,6 @@
 5. **B** — sans connecteur MCP, Claude ne connaît que ce que vous lui donnez explicitement.
 6. **B** — la longueur en elle-même n'est pas le signal déterminant ; c'est la perte de fiabilité observable qui compte.
 7. **C** — suivi multi-tâches dans la durée : c'est exactement le rôle de Claude Cowork, au-delà d'une session de travail ponctuelle.
+8. **C** — un rendu visuel à itérer avec le client avant développement, c'est le rôle de Claude Design ; Claude Code prend le relais une fois la maquette validée (voir Module 4).
 
-**Si vous avez moins de 6/7 :** ce n'est pas un échec, c'est un signal — repérez la question ratée, relisez la partie correspondante, et refaites l'exercice guidé (`06-exercices/exercice-guide-depart.md`) avant de passer au Module 2.
+**Si vous avez moins de 7/8 :** ce n'est pas un échec, c'est un signal — repérez la question ratée, relisez la partie correspondante, et refaites l'exercice guidé (`06-exercices/exercice-guide-depart.md`) avant de passer au Module 2.

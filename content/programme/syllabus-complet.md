@@ -21,9 +21,9 @@ La plupart des gens utilisent Claude comme un moteur de recherche un peu plus in
 
 - Un ordinateur (Mac ou Windows) — pas de smartphone seul, les Modules 3 et 4 demandent un vrai poste de travail.
 - Une connexion internet stable pour suivre les sessions sur Microsoft Teams.
-- Un compte Claude.ai (le mois d'accès inclus dans votre inscription sera activé avant la Session 1 — voir email d'onboarding).
+- Un compte Claude.ai (le mois d'accès inclus dans votre inscription sera activé avant la Session 1 — voir email d'onboarding). Cet accès inclus est sur un forfait payant (Pro), ce qui couvre aussi **Claude Design**, présenté au Module 1 et réservé aux forfaits Pro/Team/Enterprise.
 - Des comptes gratuits à créer avant la formation (liste complète et instructions dans `ressources-transverses/FAQ-avant-inscription.md`) : Google (Sheets/Drive), Notion, Make.com, GitHub ou Streamlit Community Cloud (Module 4).
-- Aucun logiciel payant n'est requis pour suivre la formation dans sa totalité.
+- Aucun logiciel payant supplémentaire n'est requis pour suivre la formation dans sa totalité — le mois d'accès Claude inclus couvre tout ce qui est démontré en live.
 
 ## 4. Philosophie pédagogique
 
@@ -41,7 +41,7 @@ Concrètement, cela veut dire :
 
 | # | Module | Vous apprenez à... | Votre livrable |
 |---|---|---|---|
-| 1 | Maîtriser l'écosystème Claude | Choisir le bon outil Claude (Chat/Code/Cowork), créer une Skill, connecter un outil via MCP, gérer tokens/contexte | Environnement Claude configuré |
+| 1 | Maîtriser l'écosystème Claude | Choisir le bon outil Claude (Chat/Code/Cowork/Chrome/Design), créer une Skill, connecter un outil via MCP, gérer tokens/contexte | Environnement Claude configuré |
 | 2 | Communiquer avec Claude comme un expert | Prompter avec la méthode C.L.A.R.T.É, construire des workflows réutilisables, analyser des documents | Bibliothèque de 15+ prompts personnels |
 | 3 | Claude, Data Analyst personnel | Nettoyer et analyser des données (Excel, SQL, Python en option), visualiser des insights | Projet complet d'analyse de données |
 | 4 | Solutions numériques avec Claude Code | Construire et déployer un dashboard ou un site sans expérience de développeur | Application ou site déployé (lien fonctionnel) |

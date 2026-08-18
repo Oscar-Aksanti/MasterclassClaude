@@ -8,7 +8,7 @@ Numérotation alignée sur `modules/module-1-ecosysteme-claude/03-support-slides
 |---|---|
 | 1 — Titre | Laisser la slide 5-10 secondes en silence pendant que les derniers participants arrivent, puis dérouler le script d'ouverture de `run-of-show-session-1.md`. |
 | 2 — Section "Partie 1/4" | "On commence par la question la plus simple et pourtant la plus mal répondue : parmi tout ce que Claude propose, qu'est-ce que j'utilise, quand ?" |
-| 3 — 4 outils, 4 usages | Ne pas lire la liste — la commenter avec un exemple pour CHAQUE outil, pris dans le sondage du chat de la reconnexion si possible ("vous, en compta, Claude.ai vous suffit pour 90% de votre travail ; mais dès que vous voulez UN FICHIER livrable, on passe à Claude Code"). |
+| 3 — 5 outils, 5 usages | Ne pas lire la liste — la commenter avec un exemple pour CHAQUE outil, pris dans le sondage du chat de la reconnexion si possible ("vous, en compta, Claude.ai vous suffit pour 90% de votre travail ; mais dès que vous voulez UN FICHIER livrable, on passe à Claude Code" ; pour Claude Design, prendre l'exemple d'une maquette de landing page à montrer à un client avant de la développer). |
 | 4 — L'arbre de décision | Marquer un vrai temps d'arrêt ici : "Prenez une capture de cette slide maintenant, sérieusement." Attendre 5 secondes avant de continuer. |
 | 5 — Citation Fatou | Ton plus posé, presque anecdotique : "Ça vous parle ? Copier-coller des colonnes à la main pendant que l'IA la plus capable du marché tourne dans l'onglet à côté — c'est exactement ce qu'on va arrêter de faire ce soir." |
 | 6 — Section "Partie 2/4" | "Claude Code fait peur au nom seulement — 'Code'. Vous ne taperez pas une ligne. Regardez." |

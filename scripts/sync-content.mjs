@@ -17,6 +17,24 @@ const CONTENT_DIR = path.join(WEB_ROOT, "content");
 const PUBLIC_DIR = path.join(WEB_ROOT, "public");
 const DOWNLOADS_DIR = path.join(PUBLIC_DIR, "downloads");
 
+// Garde-fou déploiement : si ce script tourne dans un environnement où seul le dossier
+// plateforme-web/ a été mis à disposition (ex. Vercel avec "Root Directory" = plateforme-web
+// et l'option "Include files outside root directory" désactivée, ou un déploiement CLI lancé
+// depuis l'intérieur de plateforme-web/), les dossiers sources (../modules, ../kit-animateur,
+// etc.) n'existent pas sur la machine de build. Dans ce cas, NE PAS vider content/ et
+// public/downloads/ : on préserve les fichiers déjà committés (résultat d'une synchronisation
+// précédente faite en local) plutôt que de déployer un site vidé de tout son contenu.
+if (!fs.existsSync(path.join(REPO_ROOT, "modules"))) {
+  console.warn(
+    "! Dossiers sources introuvables (racine du dépôt non disponible dans cet environnement de build).\n" +
+    "  Synchronisation ignorée — le contenu déjà présent dans content/ et public/downloads/\n" +
+    "  (committé lors d'une synchronisation précédente en local) est conservé tel quel.\n" +
+    "  Pensez à relancer `node scripts/sync-content.mjs` en local après toute mise à jour du\n" +
+    "  contenu source, puis à committer content/ et public/downloads/ avant de déployer."
+  );
+  process.exit(0);
+}
+
 // ---------------------------------------------------------------------------
 // Utilitaires
 // ---------------------------------------------------------------------------

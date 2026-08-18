@@ -9,8 +9,9 @@
 | 3 | Construire un tableau de bord web | **Claude Code** | Il faut créer un livrable structuré (une application) avec plusieurs fichiers — c'est le cœur de ce que fait Claude Code (voir Module 4) |
 | 4 | Comparer les tarifs de 5 concurrents en ligne | **Claude in Chrome** | La tâche nécessite de naviguer réellement sur des pages web externes, pas de traiter un fichier ou répondre à une question théorique |
 | 5 | Suivre un projet client sur plusieurs semaines | **Claude Cowork** | Suivi dans la durée, plusieurs tâches et échéances à orchestrer — au-delà d'une session de travail unique |
+| 6 | Créer la maquette d'une landing page pour une nouvelle offre | **Claude Design** | Rendu visuel professionnel attendu, avec des ajustements en temps réel sur une toile — pas un fichier de code à relire ni une simple réponse texte |
 
-**Piège fréquent à surveiller (côté animateur) :** beaucoup de participants répondent "Claude Code" à la tâche 1 par réflexe ("c'est plus puissant") — l'occasion de rappeler que le bon outil est le plus **simple** qui suffit, pas le plus impressionnant. Utiliser Claude Code pour un email ponctuel n'est pas une erreur fatale, mais c'est un détour inutile.
+**Piège fréquent à surveiller (côté animateur) :** beaucoup de participants répondent "Claude Code" à la tâche 1 par réflexe ("c'est plus puissant") — l'occasion de rappeler que le bon outil est le plus **simple** qui suffit, pas le plus impressionnant. Utiliser Claude Code pour un email ponctuel n'est pas une erreur fatale, mais c'est un détour inutile. Sur la tâche 6, certains répondront "Claude Code" aussi — rappeler que Claude Design reste préférable en première intention pour un rendu **visuel** à itérer avec un client, Claude Code prenant le relais une fois la maquette validée pour la rendre fonctionnelle (lien direct avec le Module 4).
 
 ## Partie B — Points de vérification
 

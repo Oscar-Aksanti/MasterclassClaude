@@ -20,9 +20,9 @@ Bibliothèque complète, classée par catégorie (alignée sur les 6 modules du 
 - **Niveau :** Débutant
 - **Outil recommandé :** Claude.ai
 - **Contexte d'usage :** Quand vous hésitez entre plusieurs outils Claude pour une tâche précise.
-- **Prompt :** *"Voici une tâche que je dois faire : {description_tache}. Parmi Claude.ai (chat), Claude Code, Claude Cowork et Claude in Chrome, lequel est le plus adapté, et pourquoi en une phrase ?"*
+- **Prompt :** *"Voici une tâche que je dois faire : {description_tache}. Parmi Claude.ai (chat), Claude Code, Claude Cowork, Claude in Chrome et Claude Design, lequel est le plus adapté, et pourquoi en une phrase ?"*
 - **Variables :** `{description_tache}`
-- **Exemple rempli :** Voici une tâche que je dois faire : comparer les tarifs de 5 concurrents sur leurs sites web. Parmi Claude.ai (chat), Claude Code, Claude Cowork et Claude in Chrome, lequel est le plus adapté, et pourquoi en une phrase ?
+- **Exemple rempli :** Voici une tâche que je dois faire : comparer les tarifs de 5 concurrents sur leurs sites web. Parmi Claude.ai (chat), Claude Code, Claude Cowork, Claude in Chrome et Claude Design, lequel est le plus adapté, et pourquoi en une phrase ?
 - **Résultat attendu :** Une recommandation d'outil justifiée en une phrase, sans avoir à connaître l'arbre de décision par cœur.
 
 ### ECO-002 — Générer une Skill à partir d'une tâche répétitive

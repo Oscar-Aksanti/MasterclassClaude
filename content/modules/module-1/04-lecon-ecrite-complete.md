@@ -6,7 +6,7 @@
 
 Fatou Diallo est consultante indépendante en gestion de projets à Dakar. Depuis deux ans, elle utilise Claude — mais uniquement comme un moteur de recherche amélioré : elle ouvre le chat, pose une question, copie la réponse, referme l'onglet. Elle recommence à zéro à chaque fois. Elle ne sait pas que Claude peut : retrouver un document dans son Google Drive sans qu'elle ait à le chercher elle-même, appliquer automatiquement sa méthode personnelle à chaque nouveau compte-rendu de réunion sans qu'elle ait à la retaper, ou garder en mémoire le contexte de ses clients d'une conversation à l'autre.
 
-Le problème n'est pas Claude. C'est qu'elle n'utilise qu'une seule porte d'entrée sur quatre, et qu'elle n'a jamais configuré l'outil pour qu'il travaille *pour elle* plutôt que de répondre *à elle*.
+Le problème n'est pas Claude. C'est qu'elle n'utilise qu'une seule porte d'entrée sur cinq, et qu'elle n'a jamais configuré l'outil pour qu'il travaille *pour elle* plutôt que de répondre *à elle*.
 
 Ce module règle exactement ça. À la fin, vous aurez un environnement Claude configuré une fois pour toutes — et vous saurez, pour n'importe quelle tâche future, immédiatement quel outil ouvrir.
 
@@ -26,6 +26,9 @@ Il n'existe pas "un" Claude, mais plusieurs façons de l'utiliser, chacune adapt
 | **Claude Code** | Une tâche qui implique des fichiers (documents, tableaux, code), plusieurs étapes, ou la création d'un livrable (document, appli, site) | Nettoyer un fichier Excel, construire un dashboard, analyser un dossier de documents |
 | **Claude Cowork** | Un projet à suivre dans la durée, avec plusieurs tâches, un planning, une progression à orchestrer | Piloter un projet client sur plusieurs semaines, avec relances et échéances |
 | **Claude in Chrome** | Une tâche qui nécessite de naviguer sur le web ou d'interagir avec des pages/applications en ligne | Comparer les tarifs de 5 concurrents sur leurs sites, remplir un formulaire en ligne |
+| **Claude Design** | Une tâche qui demande un rendu visuel professionnel — maquette, page web, support marketing — à partir d'une simple description, avec un aller-retour visuel en temps réel plutôt qu'un fichier à relire | Créer la maquette d'une landing page ou d'une présentation client à partir d'un brief texte |
+
+**Zoom sur Claude Design**, moins connu que les 4 autres : c'est un espace de travail à part, réservé aux forfaits payants (Pro/Team/Enterprise), organisé en deux volets — une discussion à gauche, une toile visuelle interactive à droite. Vous décrivez ce que vous voulez, Claude Design construit une vraie maquette (pas une image figée, du code réutilisable) que vous pouvez annoter et corriger directement sur la toile, à plusieurs si besoin, avant de l'exporter (vers Canva par exemple) ou de la transmettre telle quelle à Claude Code pour la rendre fonctionnelle. Analogie : c'est un graphiste qui esquisse sous vos yeux pendant que vous parlez, plutôt qu'un aller-retour de fichiers par email.
 
 ### L'arbre de décision (à garder sous la main)
 
@@ -43,6 +46,9 @@ Ma tâche du jour...
 │
 ├─ ...nécessite d'aller chercher/agir sur des pages web
 │  → Claude in Chrome
+│
+├─ ...demande un rendu visuel professionnel (maquette, page, support marketing)
+│  → Claude Design
 │
 └─ ...est une tâche que je refais chaque semaine à l'identique
    → une Skill (Partie 3), éventuellement une automatisation complète (Module 5)
@@ -184,6 +190,6 @@ Avant la Session 2, complétez l'intégralité de la checklist de livrable (Part
 
 ## Ce qu'il faut retenir
 
-1. **Il n'y a pas un seul "Claude"** — il y a quatre portes d'entrée, et choisir la bonne vous fait gagner un temps disproportionné par rapport à l'effort d'apprentissage.
+1. **Il n'y a pas un seul "Claude"** — il y a cinq portes d'entrée, et choisir la bonne vous fait gagner un temps disproportionné par rapport à l'effort d'apprentissage.
 2. **Une Skill, c'est votre méthode écrite une fois et réutilisée à l'infini** — la rentabilité arrive dès la 2ᵉ ou 3ᵉ utilisation.
 3. **Une conversation a une durée de vie utile** — savoir la couper et repartir avec un résumé/fichier de mémoire est une compétence, pas un contournement.

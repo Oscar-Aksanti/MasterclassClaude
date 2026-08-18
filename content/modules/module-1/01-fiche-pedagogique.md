@@ -6,7 +6,7 @@
 
 À la fin de cette session, chaque participant est capable de :
 
-1. **Choisir** le bon outil Claude (Claude.ai, Claude Code, Claude Cowork, Claude in Chrome) selon la nature d'une tâche, sans hésitation ni essai-erreur.
+1. **Choisir** le bon outil Claude (Claude.ai, Claude Code, Claude Cowork, Claude in Chrome, Claude Design) selon la nature d'une tâche, sans hésitation ni essai-erreur.
 2. **Installer et utiliser** Claude Code pour une tâche simple.
 3. **Créer une Skill** personnelle minimale et l'invoquer.
 4. **Connecter un serveur MCP** (Google Drive) et l'utiliser dans une conversation.

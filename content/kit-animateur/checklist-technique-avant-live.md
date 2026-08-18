@@ -9,7 +9,7 @@
 - [ ] Connexion internet stable vérifiée — idéalement filaire plutôt que Wi-Fi pour l'animateur, avec une connexion de secours identifiée (partage de connexion mobile) en cas de coupure.
 - [ ] Microsoft Teams ouvert, micro et caméra testés, partage d'écran testé sur l'application réellement utilisée en démo (pas seulement sur le bureau).
 - [ ] Notifications désactivées sur tout l'appareil de démonstration (emails, messages, mises à jour) — une notification personnelle visible pendant un partage d'écran à 65 personnes est l'incident le plus fréquent et le plus évitable.
-- [ ] Claude Code / Claude.ai / Claude Cowork déjà connectés avec le compte de démonstration (pas de connexion à faire en direct, sauf quand la connexion elle-même est le sujet de la démo — voir Module 1).
+- [ ] Claude Code / Claude.ai / Claude Cowork / Claude Design déjà connectés avec le compte de démonstration (pas de connexion à faire en direct, sauf quand la connexion elle-même est le sujet de la démo — voir Module 1).
 - [ ] Le lien Teams unique de la cohorte vérifié dans le calendrier — envoyer un rappel dans la communauté 1h avant si ce n'est pas déjà automatisé.
 - [ ] Le fichier `kit-animateur/run-of-show-session-N.md` du jour ouvert, ainsi que `05-demo-commentee.md` et les fichiers d'exercice correspondants du module.
 - [ ] Une bouteille d'eau et un chronomètre/minuteur visible — 1h45 de présentation continue se ressent, et le minutage par bloc doit rester visible sans avoir à faire le calcul mentalement.

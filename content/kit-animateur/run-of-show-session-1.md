@@ -33,7 +33,7 @@ Avant d'ouvrir la session : dérouler `kit-animateur/checklist-technique-avant-l
 ## [18h10–18h25] Bloc 2 — Mini-concept : panorama des outils (15 min)
 
 Support : slides 2 à 5 (`03-support-slides.md`). Points à couvrir dans l'ordre :
-1. Les 4 outils Claude et leur usage distinct (slide 3) — insister sur l'analogie "le mauvais outil = 3x plus de temps pour le même résultat", pas sur une liste de fonctionnalités.
+1. Les 5 outils Claude et leur usage distinct (slide 3) — insister sur l'analogie "le mauvais outil = 3x plus de temps pour le même résultat", pas sur une liste de fonctionnalités.
 2. L'arbre de décision (slide 4) — annoncer explicitement : "gardez cette slide, elle répond à 80 % de vos hésitations les premières semaines."
 3. Callback Fatou (slide 5) — la citation sur le copier-coller de tableaux à la main. C'est le pont naturel vers la démo.
 
